@@ -1,0 +1,16 @@
+.section {
+    
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+.rippleBackground {
+  background-image: url("/src/assets/images/Section2bg.png");
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}

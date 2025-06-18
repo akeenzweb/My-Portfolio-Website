@@ -1,0 +1,32 @@
+
+
+.section1 {
+    
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80"); */
+/* .ripple-background {
+  background-image: url("/public/bggg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+} */
+
+/* .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #000;
+} */
+
+
+

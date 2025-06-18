@@ -1,0 +1,32 @@
+.section {
+    
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+.rippleBackground {
+  /* background-image: url("/public/bggg.png"); */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.dmSans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.jetBrains {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.redB {
+  border: 2px solid red;
+}
+
+.greenB {
+  border: 2px solid green;
+}
