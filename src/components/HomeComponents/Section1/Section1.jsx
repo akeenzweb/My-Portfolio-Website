@@ -37,7 +37,7 @@ export default function Home() {
         };
       }, []);
 
-      const [isActive, setIsActive] = useState(true);
+      const [isActive] = useState(true);
 
 
   return (
