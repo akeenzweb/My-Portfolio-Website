@@ -22,3 +22,8 @@
   pointer-events: none;
   z-index: 1;
 }
+
+
+.dmSans {
+  font-family: "DM Sans", sans-serif;
+}
