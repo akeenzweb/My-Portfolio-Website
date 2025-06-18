@@ -1,8 +1,12 @@
 import React from "react";
 
 //import Img from '../../assets/images/thum4.png'
+import Header from '../../components/Header/Header'
+
+
 import Section1 from '../../components/HomeComponents/Section1/Section1'
 import Section2 from '../../components/HomeComponents/Section2/Section2'
+
 
 import './Home.css'
 
@@ -12,6 +16,7 @@ export default function Home() {
 
   return (
     <div>
+        <Header />
         <Section1  />
         <Section2 />
         {/* <div className='section1'>

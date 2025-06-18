@@ -23,6 +23,10 @@
   font-family: "JetBrains Mono", monospace;
 }
 
+.sourceCode {
+  font-family: "Source Code Pro", monospace;
+}
+
 .redB {
   border: 2px solid red;
 }

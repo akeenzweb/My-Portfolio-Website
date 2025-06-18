@@ -37,11 +37,12 @@ export default function Home() {
 
 
   return (
-    <div className="relative z-20 mt-[100vh]">
+    // <div className="relative z-20 mt-[100vh]">
+    <div className="relative z-0">
         <div className={style.section}>
             <div className={style.rippleBackground} ref={rippleRef}>
-                <h1 className="text-3xl font-bold text-blue-600">Tailwind is Working 🎉</h1>
-                <p className="text-sm text-gray-600">If you can see this styled text, it’s all good.</p>
+                {/* <h1 className="text-3xl font-bold text-blue-600">Tailwind is Working 🎉</h1>
+                <p className="text-sm text-gray-600">If you can see this styled text, it’s all good.</p> */}
 
             </div>
         </div>
