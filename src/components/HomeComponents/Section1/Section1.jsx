@@ -43,7 +43,7 @@ export default function Home() {
       }, []);
 
       // const [isActive, setIsActive] = useState(true);
-      const [isEveryone, setIsEveryone] = useState(false);
+      const [isEveryone, setIsEveryone] = useState(true);
 
 
   return (
