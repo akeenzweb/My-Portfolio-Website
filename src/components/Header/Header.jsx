@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import style from './Header.module.css'
 
 import Logo from '../../assets/images/logo-AS.svg'
-import Menu from '../../assets/icons/menu2.svg'
+import Menu from '../../assets/icons/menu.svg'
 import Close from '../../assets/icons/close.svg'
 
 
