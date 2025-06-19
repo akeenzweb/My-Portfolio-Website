@@ -89,7 +89,7 @@ export default function Home() {
                       </div> */}
 
                         <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
-                        <div className="grid place-items-center pointer-events-none">
+                        <div className="grid place-items-center">
                             <ul className={`${style.jetBrains}  flex lg:hidden mt-5  text-white text-sm items-center`}>
                               <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
                               <li onClick={() => setIsEveryone(false)} className={`mr-6 ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
@@ -116,14 +116,21 @@ export default function Home() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
-                      // className="p-4 bg-red-200 rounded"
+                       className="grid place-items-center"
                     >
+                        <div className={` flex justify-center `}>
+                          <ul className={`${style.jetBrains}  flex justify-center max-w-md w-full text-center mx-auto lg:hidden mt-5  text-white text-sm items-center`}>
+                            <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
+                            <li onClick={() => setIsEveryone(false)} className={` ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
+                          </ul>
+                        </div>
                       <div className="mt-12">
+                        
                         <div className="grid grid-cols-1 md:grid-cols-11 gap-4 items-center mb-20">
                           {/* Right section: comes first on mobile, right side on desktop */}
                           <div className="order-1 md:order-2 md:col-span-4">
-                            <div className="">
-                              <img src={RightImg} alt="" />
+                            <div className="grid place-content-center">
+                              <img className="w-[300px] lg:w-full" src={RightImg} alt="" />
                             </div>
                           </div>
 
