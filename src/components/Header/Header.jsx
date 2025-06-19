@@ -18,8 +18,8 @@ export default function Header() {
   return (
     <div >
       {/* For Laptops */}
-      <div className={`${style.header} fixed top-0 left-0 w-full h-28 z-10`}>
-        <div className={`${style.blurOverlay} hidden lg:flex items-center justify-center  w-full h-28 z-10 px-4 md:px-20 `}>
+      <div className={`${style.header} hidden lg:block fixed top-0 left-0 w-full h-28 z-10`}>
+        <div className={`${style.blurOverlay}  lg:flex items-center justify-center  w-full h-28 z-10 px-4 md:px-20 `}>
             <div className={` flex justify-between items-center w-full`}>
                 <img src={Logo} alt="" />
                 <ul className={`${style.dmSans} flex text-[#787878] tracking-[6px] font-semibold`}>
@@ -34,7 +34,7 @@ export default function Header() {
       
 
         {/* For Mobiles */}
-        <div className={`${style.header} fixed top-0 left-0 w-full h-28 z-10`}>
+        <div className={`${style.header} fixed top-0 left-0 w-full h-24 z-10`}>
             <div className={`  block lg:hidden items-center justify-center  w-full  z-10  `}>
               <div className={`  flex justify-between items-center w-full px-4 md:px-20`}>
                   <img src={Logo} alt="" />
