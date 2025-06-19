@@ -54,7 +54,7 @@ export default function Home() {
               <div className={` relative cursor-pointer flex items-center justify-center pt-36` } >
                 <div className={`  w-full`}>
                   <div className="-mb-6">
-                    <ul className={`${style.jetBrains} flex text-white text-sm items-center`}>
+                    <ul className={`${style.jetBrains} hidden  lg:flex text-white text-sm items-center`}>
                       <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
                       <li onClick={() => setIsEveryone(false)} className={`mr-6 ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
                     </ul>
@@ -72,7 +72,11 @@ export default function Home() {
                       className="grid place-items-center"
                     >
                       <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
-                      <img className=" block lg:hidden w-[140px] mt-14 " src={Profile} alt="" />
+                      <ul className={`${style.jetBrains}  flex lg:hidden mt-5 text-white text-sm items-center`}>
+                        <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
+                        <li onClick={() => setIsEveryone(false)} className={`mr-6 ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
+                      </ul>
+                      <img className=" block lg:hidden w-[140px] mt-10 " src={Profile} alt="" />
                       <div className="flex items-center justify-center h-screen w-full text-white -mt-44 lg:-mt-32 pointer-events-none">
                         <div className={`${style.dmSans}  center`}>
                             {/* <p className={`${style.dmSans} text-center text-xl mb-2 lg:mb-10 tracking-[6px]`}>Hi, I’m</p> */}
