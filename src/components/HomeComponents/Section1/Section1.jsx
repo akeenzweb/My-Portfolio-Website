@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     // <div className="fixed top-0 left-0 w-full h-screen z-0">
-    <div className={`${style.rippleBackground} w-full bg-[url('/public/bggg-m2.png')] lg:bg-[url('/public/bggg.png')] min-h-screen px-4 lg:px-20 z-0 bg-slate-400`} ref={rippleRef}>
+    <div className={`${style.rippleBackground} w-full bg-[url('/public/bggg-m3.png')] lg:bg-[url('/public/bggg.png')] min-h-screen px-4 lg:px-20 z-0 bg-[#1c1c1c]`} ref={rippleRef}>
         <div className={`${style.section}`}>
             <div  >
               <div className={` relative cursor-pointer flex items-center justify-center pt-36` } >
@@ -77,11 +77,11 @@ export default function Home() {
                         <div className={`${style.dmSans}  center`}>
                             {/* <p className={`${style.dmSans} text-center text-xl mb-2 lg:mb-10 tracking-[6px]`}>Hi, I’m</p> */}
                             {/* <h1 className="mb-4 text-center text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]">AKINBOLADE <br /> SALAKO</h1> */}
-                            <ScrambleText text="Hi, I’m" className={`${style.dmSans} block text-center text-xl mb-2 lg:mb-10 tracking-[6px]`} speed={120} delay={0.3} duration={5}/><br />
-                            <ScrambleText text="AKINBOLADE" className="-mb-5 lg:mb-4 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]" speed={120} delay={0.3} duration={5}/><br />
+                            <ScrambleText text="Hi, I’m" className={`${style.dmSans} block text-center text-sm lg:text-xl mb-2 lg:mb-10 tracking-[6px]`} speed={120} delay={0.3} duration={5}/><br />
+                            <ScrambleText text="AKINBOLADE" className="-mb-10 lg:mb-4 -mt-8 lg:-mt-0 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]" speed={120} delay={0.3} duration={5}/><br />
                             <ScrambleText text="SALAKO" className="mb-4 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]"speed={120}  delay={0.3} duration={2}/>
-                            <p className="mb-4 text-center tracking-[4px] font-medium opacity-25">Or just <span className="font-semibold text-[#92FF90]">Salaks</span> for short</p>
-                            <p className="mb-4 text-center tracking-[4px]">A <span className="text-xl text-[#FF9C12] font-extrabold">PRODUCT DESIGNER</span> turning complex ideas into simple, intuitive experiences.</p>
+                            <p className="mb-4  text-xs lg:text-base text-center tracking-[4px] font-medium opacity-25">Or just <span className="font-semibold text-[#92FF90]">Salaks</span> for short</p>
+                            <p className="mb-4 text-center tracking-[4px] text-sm lg:text-base">A <span className="text-base lg:text-xl text-[#FF9C12] font-extrabold">PRODUCT DESIGNER</span> turning complex ideas into simple, intuitive experiences.</p>
                         </div>
                       </div>
                     </motion.div>
