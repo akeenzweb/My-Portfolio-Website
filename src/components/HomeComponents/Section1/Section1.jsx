@@ -71,7 +71,7 @@ export default function Home() {
                       // className="p-4 bg-green-200 rounded"
                       className="grid place-items-center"
                     >
-                      <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
+                      {/* <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
                       <ul className={`${style.jetBrains}  flex lg:hidden mt-5 text-white text-sm items-center`}>
                         <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
                         <li onClick={() => setIsEveryone(false)} className={`mr-6 ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
@@ -79,15 +79,35 @@ export default function Home() {
                       <img className=" block lg:hidden w-[140px] mt-10 " src={Profile} alt="" />
                       <div className="flex items-center justify-center h-screen w-full text-white -mt-44 lg:-mt-32 pointer-events-none">
                         <div className={`${style.dmSans}  center`}>
-                            {/* <p className={`${style.dmSans} text-center text-xl mb-2 lg:mb-10 tracking-[6px]`}>Hi, I’m</p> */}
-                            {/* <h1 className="mb-4 text-center text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]">AKINBOLADE <br /> SALAKO</h1> */}
+                            
                             <ScrambleText text="Hi, I’m" className={`${style.dmSans} block text-center text-sm lg:text-xl mb-2 lg:mb-10 tracking-[6px]`} speed={120} delay={0.3} duration={5}/><br />
                             <ScrambleText text="AKINBOLADE" className="-mb-10 lg:mb-4 -mt-8 lg:-mt-0 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]" speed={120} delay={0.3} duration={5}/><br />
                             <ScrambleText text="SALAKO" className="mb-4 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]"speed={120}  delay={0.3} duration={2}/>
                             <p className="mb-4  text-xs lg:text-base text-center tracking-[4px] font-medium opacity-25">Or just <span className="font-semibold text-[#92FF90]">Salaks</span> for short</p>
                             <p className="mb-4 text-center tracking-[4px] text-sm lg:text-base">A <span className="text-base lg:text-xl text-[#FF9C12] font-extrabold">PRODUCT DESIGNER</span> turning complex ideas into simple, intuitive experiences.</p>
                         </div>
-                      </div>
+                      </div> */}
+
+                        <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
+                        <div className="grid place-items-center pointer-events-none">
+                            <ul className={`${style.jetBrains}  flex lg:hidden mt-5  text-white text-sm items-center`}>
+                              <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
+                              <li onClick={() => setIsEveryone(false)} className={`mr-6 ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
+                            </ul>
+                            <img className="mt-10 block lg:hidden w-[140px]" src={Profile} alt="" />
+                            <div className="flex items-center justify-center  w-full text-white  lg:-mt-32 pointer-events-none">
+                              <div className={`${style.dmSans}  center`}>
+                                  {/* <p className={`${style.dmSans} text-center text-xl mb-2 lg:mb-10 tracking-[6px]`}>Hi, I’m</p> */}
+                                  {/* <h1 className="mb-4 text-center text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]">AKINBOLADE <br /> SALAKO</h1> */}
+                                  <ScrambleText text="Hi, I’m" className={`${style.dmSans} mt-5 lg:mt-32 lg block text-center text-sm lg:text-xl lg:mb-10 tracking-[6px]`} speed={120} delay={0.3} duration={5}/><br />
+                                  <ScrambleText text="AKINBOLADE" className="-mt-5 lg:mb-4 lg:-mt-9 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]" speed={120} delay={0.3} duration={5}/><br />
+                                  <ScrambleText text="SALAKO" className="-mt-10 lg:-mt-0 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]"speed={120}  delay={0.3} duration={2}/>
+                                  <p className="mt-4 lg:mt-0  text-xs lg:text-base text-center tracking-[4px] font-medium opacity-25">Or just <span className="font-semibold text-[#92FF90]">Salaks</span> for short</p>
+                                  <p className="mt-5 text-center tracking-[4px] text-sm lg:text-base">A <span className="text-base lg:text-xl text-[#FF9C12] font-extrabold">PRODUCT DESIGNER</span> turning complex ideas into simple, intuitive experiences.</p>
+                              </div>
+                            </div>
+                        </div>
+                      
                     </motion.div>
                   ) : (
                     <motion.div
