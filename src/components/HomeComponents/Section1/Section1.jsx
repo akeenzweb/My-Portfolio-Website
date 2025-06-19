@@ -72,8 +72,8 @@ export default function Home() {
                       className="grid place-items-center"
                     >
                       <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
-                      <img className=" block lg:hidden w-[140px] mt-20 " src={Profile} alt="" />
-                      <div className="flex items-center justify-center h-screen w-full text-white -mt-40 lg:-mt-32 pointer-events-none">
+                      <img className=" block lg:hidden w-[140px] mt-14 " src={Profile} alt="" />
+                      <div className="flex items-center justify-center h-screen w-full text-white -mt-44 lg:-mt-32 pointer-events-none">
                         <div className={`${style.dmSans}  center`}>
                             {/* <p className={`${style.dmSans} text-center text-xl mb-2 lg:mb-10 tracking-[6px]`}>Hi, I’m</p> */}
                             {/* <h1 className="mb-4 text-center text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]">AKINBOLADE <br /> SALAKO</h1> */}
