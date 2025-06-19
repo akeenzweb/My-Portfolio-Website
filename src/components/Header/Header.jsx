@@ -35,7 +35,7 @@ export default function Header() {
 
         {/* For Mobiles */}
         <div className={`${style.header} fixed top-0 left-0 w-full h-24 z-10`}>
-            <div className={`  block lg:hidden items-center justify-center  w-full  z-10  `}>
+            <div className={`${style.blurOverlay}  block lg:hidden items-center justify-center  w-full  z-10  `}>
               <div className={`  flex justify-between items-center w-full px-4 md:px-20`}>
                   <img src={Logo} alt="" />
                   <div onClick={() => setIsOpen(prev => !prev)}>
