@@ -52,8 +52,8 @@ export default function Home() {
         <div className={`${style.section}`}>
             <div  >
               <div className={` relative cursor-pointer flex items-center justify-center pt-36` } >
-                <div className={`  w-full`}>
-                  <div className="-mb-6">
+                <div className={`flex flex-col gap-0  w-full`}>
+                  <div>
                     <ul className={`${style.jetBrains} hidden  lg:flex text-white text-sm items-center`}>
                       <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
                       <li onClick={() => setIsEveryone(false)} className={`mr-6 ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
@@ -69,7 +69,7 @@ export default function Home() {
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
                       // className="p-4 bg-green-200 rounded"
-                      className="grid place-items-center"
+                      className="flex justify-center"
                     >
                       {/* <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
                       <ul className={`${style.jetBrains}  flex lg:hidden mt-5 text-white text-sm items-center`}>
@@ -89,17 +89,17 @@ export default function Home() {
                       </div> */}
 
                         <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
-                        <div className="grid place-items-center">
+                        <div className="flex flex-col items-center justifycenter">
                             <ul className={`${style.jetBrains}  flex lg:hidden mt-5  text-white text-sm items-center`}>
                               <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
                               <li onClick={() => setIsEveryone(false)} className={`mr-6 ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
                             </ul>
                             <img className="mt-10 block lg:hidden w-[140px]" src={Profile} alt="" />
-                            <div className="flex items-center justify-center  w-full text-white  lg:-mt-32 pointer-events-none">
+                            <div className={`flex items-center justify-center mt-8 w-full text-white`}>
                               <div className={`${style.dmSans}  center`}>
                                   {/* <p className={`${style.dmSans} text-center text-xl mb-2 lg:mb-10 tracking-[6px]`}>Hi, I’m</p> */}
                                   {/* <h1 className="mb-4 text-center text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]">AKINBOLADE <br /> SALAKO</h1> */}
-                                  <ScrambleText text="Hi, I’m" className={`${style.dmSans} mt-5 lg:mt-32 lg block text-center text-sm lg:text-xl lg:mb-10 tracking-[6px]`} speed={120} delay={0.3} duration={5}/><br />
+                                  <ScrambleText text="Hi, I’m" className={`${style.dmSans}  lg block text-center text-sm lg:text-xl lg:mb-10 tracking-[6px]`} speed={120} delay={0.3} duration={5}/><br />
                                   <ScrambleText text="AKINBOLADE" className="-mt-5 lg:mb-4 lg:-mt-9 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]" speed={120} delay={0.3} duration={5}/><br />
                                   <ScrambleText text="SALAKO" className="-mt-10 lg:-mt-0 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]"speed={120}  delay={0.3} duration={2}/>
                                   <p className="mt-4 lg:mt-0  text-xs lg:text-base text-center tracking-[4px] font-medium opacity-25">Or just <span className="font-semibold text-[#92FF90]">Salaks</span> for short</p>
@@ -175,8 +175,8 @@ export default function Home() {
                                   <ScrambleText text="highly_technical" className={`${style.sourceCode} text-[#4b8de9] block text-center  mb-0 tracking-[2px]`} speed={120} delay={0.3} duration={5}/><br />
                                   <ScrambleText text="}, " className={`${style.sourceCode} text-[#ffffff] block text-left  mb-0 tracking-[2px]`} speed={120} delay={0.3} duration={5}/><br />
                                 </div>
-                                  <ScrambleText text="and" className={`${style.sourceCode} text-[#ffffff] block text-left  mb-0 tracking-[2px]`} speed={120} delay={0.3} duration={5}/><br />
-                                <div className="flex mt-2">
+                                  <ScrambleText text="and" className={`${style.sourceCode} text-[#ffffff] block  text-left  mb-0 tracking-[2px]`} speed={120} delay={0.3} duration={5}/><br />
+                                <div className="flex -mt-5">
                                   <ScrambleText text="while (" className={`${style.sourceCode} text-[#ffffff] whitespace-nowrap block text-center  mb-0 tracking-[2px]`} speed={120} delay={0.3} duration={5}/><br />
                                   <ScrambleText text="I’m ≠ engineer" className={`${style.sourceCode} text-[#D218DC] whitespace-nowrap block text-center  mb-0 tracking-[2px]`} speed={120} delay={0.3} duration={5}/><br />
                                   <ScrambleText text="), " className={`${style.sourceCode} text-[#ffffff]  block text-center  mb-0 tracking-[2px]`} speed={120} delay={0.3} duration={5}/><br />
