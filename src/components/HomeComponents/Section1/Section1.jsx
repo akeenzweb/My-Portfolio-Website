@@ -89,8 +89,8 @@ export default function Home() {
                       </div> */}
 
                         <img className="hidden lg:block w-[70px] md:w-[140px] absolute right-[10px] md:right-[90px] top-96" src={Profile} alt="" />
-                        <div className="flex flex-col items-center justifycenter">
-                            <ul className={`${style.jetBrains}  flex lg:hidden mt-5  text-white text-sm items-center`}>
+                        <div className="flex flex-col items-center justifycenter ">
+                            <ul className={`${style.jetBrains}  flex lg:hidden -mt-5  text-white text-sm items-center`}>
                               <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
                               <li onClick={() => setIsEveryone(false)} className={`mr-6 ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>
                             </ul>
@@ -118,7 +118,7 @@ export default function Home() {
                       transition={{ duration: 0.5 }}
                        className="grid place-items-center"
                     >
-                        <div className={` flex justify-center `}>
+                        <div className={` flex justify-center -mt-10`}>
                           <ul className={`${style.jetBrains}  flex justify-center max-w-md w-full text-center mx-auto lg:hidden mt-5  text-white text-sm items-center`}>
                             <li onClick={() => setIsEveryone(true)} className={`mr-6 ${isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Everyone</li>
                             <li onClick={() => setIsEveryone(false)} className={` ${!isEveryone ? 'bg-[#424242] px-8 py-2 rounded-[40px]' : ''}`}>Developers</li>

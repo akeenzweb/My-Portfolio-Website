@@ -34,17 +34,15 @@ export default function Header() {
       
 
         {/* For Mobiles */}
-        <div className={`${style.header} fixed top-0 left-0 w-full h-24 z-10`}>
-            <div className={`${style.blurOverlay}  block lg:hidden items-center justify-center  w-full  z-10  `}>
-              <div className={`  flex justify-between items-center w-full px-4 md:px-20`}>
-                  <img src={Logo} alt="" />
-                  <div onClick={() => setIsOpen(prev => !prev)}>
-                    <img src={Menu} alt="" className={isOpen ? 'hidden' : 'block'} />
-                    <img src={Close} alt="" className={isOpen ? 'block' : 'hidden'} />
-                  </div>
+        <div className={`${style.header} block lg:hidden fixed top-0 left-0 w-full h-24 z-10`}>
+          <div className={`  flex justify-between items-center w-full px-4 md:px-20`}>
+              <img src={Logo} alt="" />
+              <div onClick={() => setIsOpen(prev => !prev)}>
+                <img src={Menu} alt="" className={isOpen ? 'hidden' : 'block'} />
+                <img src={Close} alt="" className={isOpen ? 'block' : 'hidden'} />
               </div>
-
-              <AnimatePresence mode="wait">
+          </div>
+          <AnimatePresence mode="wait">
                   {isOpen ? (
                     <motion.div
                       key="active"
@@ -65,8 +63,9 @@ export default function Header() {
                      ) : null
                     }
                 </AnimatePresence>
-              
-          </div>
+            <div className={`${style.blurOverlay} absolute top-0 left-0 block lg:hidden items-center justify-center  w-full  z-50  `}>
+              {/* <p className='text-white'>SUP</p> */}
+            </div>
         </div>
         
     
