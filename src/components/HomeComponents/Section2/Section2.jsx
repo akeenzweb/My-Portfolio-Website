@@ -54,12 +54,12 @@ export default function Home() {
           <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>MY PROJECTS</h1>
           <div className={`${style.dmSans}w-full grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 lg:gap-x-16 lg:gap-y-32 `}>
               {items.map((item, index) => {
-                  const isMiddleColumn = index % 3 === 1;
+                  //const isMiddleColumn = index % 3 === 1;
 
                   return (
                     <div
                       key={index}
-                      className={` ${isMiddleColumn ? 'lg:-mt-32' : ''}`}
+                      // className={` ${isMiddleColumn ? 'lg:-mt-32' : ''}`}
                     >
                       <div className=" ">
                         <div className="relative h-full">
