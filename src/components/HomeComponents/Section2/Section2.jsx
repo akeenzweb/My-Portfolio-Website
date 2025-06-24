@@ -61,12 +61,12 @@ export default function Home() {
                       key={index}
                       className={` ${isMiddleColumn ? 'lg:-mt-32' : ''}`}
                     >
-                      <div className=" ">
+                      {/* <div className=" "> */}
                         <div className="relative h-full">
                           <h1 style={{ WebkitTextStroke: '1.22px white', textShadow: '1px 1px 2px rgba(0,0,0,0.25)' }} className="drop-shadow-md text-white text-5xl lg:text-7xl font-bold absolute -top-8 lg:-top-10 right-1 ">01</h1>
                           <img className="w-full h-full object-cover" src={item} alt="" />
                         </div>
-                      </div>
+                      {/* </div> */}
                     </div>
                   );
                 })}
