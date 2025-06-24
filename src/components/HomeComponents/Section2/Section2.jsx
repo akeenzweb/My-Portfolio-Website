@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     // <div className="relative z-20 mt-[100vh]">
-    <div className="relative z-0">
+    <div className="z-0">
         <div>
         {/* <div className={style.section}> */}
             <div className={`${style.rippleBackground} ${style.redB} px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
