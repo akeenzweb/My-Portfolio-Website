@@ -110,23 +110,23 @@ export default function Section3() {
                 <div className="bg-[#242424] grid grid-cols-1 md:grid-cols-3 gap-4 p-4 lg:p-5 mb-4">
                     <img src={Industry2} alt="" />
                     <div className="md:col-span-2">
-                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Supply Chain Finance</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I've designed platforms that streamline funding, invoice management, & liquidity tracking for businesses. Focused on simplifying complex financial data & workflows for users, ensuring clarity and compliance in transaction-heavy interfaces</p>
+                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Ecommerce & Fashion Lines</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">Built customer-facing experiences that drive product discovery, personalization, & seamless checkouts. Also worked on merchant tools for inventory management, order fulfillment, & storefront customization—balancing user delight with business performance.</p>
                     </div>
                 </div>
 
                 <div className="bg-[#242424] grid grid-cols-1 md:grid-cols-3 gap-4 p-4 lg:p-5 mb-4">
                     <img src={Industry3} alt="" />
                     <div className="md:col-span-2">
-                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Supply Chain Finance</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I've designed platforms that streamline funding, invoice management, & liquidity tracking for businesses. Focused on simplifying complex financial data & workflows for users, ensuring clarity and compliance in transaction-heavy interfaces</p>
+                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Fintech</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">Contributed to digital banking and payments products, focusing on trust, transparency, and financial literacy. Designed intuitive dashboards, budgeting tools, and secure transaction flows that empower users to manage their finances confidently.</p>
                     </div>
                 </div>
 
                 <div className="bg-[#242424] grid grid-cols-1 md:grid-cols-3 gap-4 p-4 lg:p-5 mb-4">
                     <img src={Industry4} alt="" />
                     <div className="md:col-span-2">
-                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Supply Chain Finance</h1>
+                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Food & Hospitality</h1>
                         <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I've designed platforms that streamline funding, invoice management, & liquidity tracking for businesses. Focused on simplifying complex financial data & workflows for users, ensuring clarity and compliance in transaction-heavy interfaces</p>
                     </div>
                 </div>
