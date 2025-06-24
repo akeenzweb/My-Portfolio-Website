@@ -79,7 +79,7 @@ export default function Home() {
     <div className={`${style.rippleBackground} h-[2200px] lg:h-[1500px] z-0 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
         {/* <div > */}
           <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>MY PROJECTS</h1>
-          <div className={`${style.dmSans}w-full grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 lg:gap-x-16 lg:gap-y-60 `}>
+          <div className={`${style.dmSans}w-full grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-24 lg:gap-x-16 lg:gap-y-60 `}>
               {items.map((item, index) => {
                   const isMiddleColumn = index % 3 === 1;
 
