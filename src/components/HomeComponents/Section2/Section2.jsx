@@ -50,7 +50,7 @@ export default function Home() {
     // <div className="relative z-20 mt-[100vh]">
     <div className="relative z-0">
         <div className={style.section}>
-            <div className={`${style.rippleBackground} px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
+            <div className={`${style.rippleBackground} ${style.redB} px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
               <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>MY PROJECTS</h1>
               
               <div className={`${style.dmSans}w-full grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 lg:gap-x-16 lg:gap-y-32 `}>
