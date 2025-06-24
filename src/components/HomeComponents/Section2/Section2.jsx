@@ -11,7 +11,7 @@ import project4 from '../../../assets/projects/project4.png'
 import project5 from '../../../assets/projects/project5.png'
 import project6 from '../../../assets/projects/project6.png'
 
-import bg from '../../../assets/images/Section2bg.png'
+//import bg from '../../../assets/images/Section2bg.png'
 
 export default function Home() {
 
@@ -51,7 +51,7 @@ export default function Home() {
   return (
     // <div className="relative z-20 mt-[100vh]">
         // <div className={style.section}> 
-    <div style={{ backgroundImage: `url(${bg})` }} className={`${style.rippleBackground} z-0 bg-slate-500 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
+    <div className={`${style.rippleBackground} h-[2000px] lg:h-[1400px] z-0 bg-slate-500 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
         {/* <div > */}
           <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>MY PROJECTS</h1>
           <div className={`${style.dmSans}w-full grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 lg:gap-x-16 lg:gap-y-32 `}>
