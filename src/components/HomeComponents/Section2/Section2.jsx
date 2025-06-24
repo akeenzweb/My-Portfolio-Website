@@ -51,7 +51,7 @@ export default function Home() {
     <div className="relative z-0 h-100">
         <div className={style.section}>
             <div className={`${style.rippleBackground} px-4 lg:px-20 pt-12 lg:pt-32`} ref={rippleRef}>
-              <h1 className={`${style.dmSans} mb-10 lg:mb-48 text-white text-center font-semibold text-2xl tracking-[6px]`}>MY PROJECTS</h1>
+              <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>MY PROJECTS</h1>
               
               <div className={`${style.dmSans}w-full grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 lg:gap-x-16 lg:gap-y-32 `}>
                 {items.map((item, index) => {
@@ -64,7 +64,7 @@ export default function Home() {
                     >
                       <div className=" ">
                         <div className="relative h-full">
-                          <h1 style={{ WebkitTextStroke: '1.22px white', textShadow: '1px 1px 2px rgba(0,0,0,0.25)' }} className="drop-shadow-md text-white text-7xl font-bold absolute -top-10 right-1 ">01</h1>
+                          <h1 style={{ WebkitTextStroke: '1.22px white', textShadow: '1px 1px 2px rgba(0,0,0,0.25)' }} className="drop-shadow-md text-white text-5xl lg:text-7xl font-bold absolute -top-8 lg:-top-10 right-1 ">01</h1>
                           <img className="w-full h-full object-cover" src={item} alt="" />
                         </div>
                       </div>
