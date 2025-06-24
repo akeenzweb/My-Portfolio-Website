@@ -1,6 +1,8 @@
 // src/App.js
 //import React, { useEffect, useRef } from "react";
-import React from "react";
+import React, { useEffect } from "react";
+import Lenis from '@studio-freight/lenis';
+
 //import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //import $ from "jquery";
@@ -13,6 +15,21 @@ import "./App.css";
 import Lines from '../src/assets/images/lines2.png'
 
 function App() {
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // optional easing
+      smooth: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   // const rippleRef = useRef();
 
   // useEffect(() => {
