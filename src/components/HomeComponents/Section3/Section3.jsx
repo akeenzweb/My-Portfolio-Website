@@ -5,6 +5,11 @@ import style from './Section3.module.css'
 import Profile from '../../../assets/images/img-profile.png'
 import Figma from '../../../assets/images/figma-interface.svg'
 
+import Industry1 from '../../../assets/images/industry1.svg'
+import Industry2 from '../../../assets/images/industry2.svg'
+import Industry3 from '../../../assets/images/industry3.svg'
+import Industry4 from '../../../assets/images/industry4.svg'
+
 
 
 export default function Section3() {
@@ -40,7 +45,7 @@ export default function Section3() {
 
 
   return (
-    <div className={`${style.rippleBackground} h-[3800px] lg:h-[2800px] z-0 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
+    <div className={`${style.rippleBackground} h-[6800px] lg:h-[4800px] z-0 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
         <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>ABOUT ME</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-11 gap-16 items-start mb-20 text-white">
@@ -66,18 +71,18 @@ export default function Section3() {
                     </div>
 
                     <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
-                        <h1 className="font-bold text-xl md:text-2xl mb-8">User Experience (UX) Design</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Focusing on user research, journey mapping, wireframing, and usability testing to ensure products are intuitive and user-centered.</p>
+                        <h1 className="font-bold text-xl md:text-2xl mb-8">User Interface (UI) Design</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Crafting visually engaging and accessible interfaces that align with brand identity and enhance usability.</p>
                     </div>
 
                     <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
-                        <h1 className="font-bold text-xl md:text-2xl mb-8">User Experience (UX) Design</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Focusing on user research, journey mapping, wireframing, and usability testing to ensure products are intuitive and user-centered.</p>
+                        <h1 className="font-bold text-xl md:text-2xl mb-8">Design Systems</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Building scalable and consistent UI components and guidelines to streamline product development across teams.</p>
                     </div>
 
                     <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
-                        <h1 className="font-bold text-xl md:text-2xl mb-8">User Experience (UX) Design</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Focusing on user research, journey mapping, wireframing, and usability testing to ensure products are intuitive and user-centered.</p>
+                        <h1 className="font-bold text-xl md:text-2xl mb-8">Prototyping & Validation</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Creating interactive prototypes to test ideas early and gather real user feedback before development.</p>
                     </div>
                 </div>
             </div>
@@ -85,6 +90,48 @@ export default function Section3() {
 
         <div className="mt-10 md:mt-56 flex justify-center">
             <img src={Figma} alt="" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-8 items-start mb-20 text-white mt-20 md:mt-56">
+            <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
+                <p className={` text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>Industries I’ve worked in</p>
+                <p className="text-[#AAAAAA] tracking-[1px] leading-9 text-base mt-4">As a product designer, I’ve worked across several industries, each presenting unique design challenges and opportunities for innovation</p>
+            </div>
+
+            <div className={` ${style.dmSans} md:col-span-4`}>
+                <div className="bg-[#242424] grid grid-cols-1 md:grid-cols-3 gap-4 p-4 lg:p-5 mb-4">
+                    <img src={Industry1} alt="" />
+                    <div className="md:col-span-2">
+                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Supply Chain Finance</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I've designed platforms that streamline funding, invoice management, & liquidity tracking for businesses. Focused on simplifying complex financial data & workflows for users, ensuring clarity and compliance in transaction-heavy interfaces</p>
+                    </div>
+                </div>
+
+                <div className="bg-[#242424] grid grid-cols-1 md:grid-cols-3 gap-4 p-4 lg:p-5 mb-4">
+                    <img src={Industry2} alt="" />
+                    <div className="md:col-span-2">
+                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Supply Chain Finance</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I've designed platforms that streamline funding, invoice management, & liquidity tracking for businesses. Focused on simplifying complex financial data & workflows for users, ensuring clarity and compliance in transaction-heavy interfaces</p>
+                    </div>
+                </div>
+
+                <div className="bg-[#242424] grid grid-cols-1 md:grid-cols-3 gap-4 p-4 lg:p-5 mb-4">
+                    <img src={Industry3} alt="" />
+                    <div className="md:col-span-2">
+                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Supply Chain Finance</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I've designed platforms that streamline funding, invoice management, & liquidity tracking for businesses. Focused on simplifying complex financial data & workflows for users, ensuring clarity and compliance in transaction-heavy interfaces</p>
+                    </div>
+                </div>
+
+                <div className="bg-[#242424] grid grid-cols-1 md:grid-cols-3 gap-4 p-4 lg:p-5 mb-4">
+                    <img src={Industry4} alt="" />
+                    <div className="md:col-span-2">
+                        <h1 className="font-bold text-xl md:text-2xl mt-8 lg:mt-0">Supply Chain Finance</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I've designed platforms that streamline funding, invoice management, & liquidity tracking for businesses. Focused on simplifying complex financial data & workflows for users, ensuring clarity and compliance in transaction-heavy interfaces</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
