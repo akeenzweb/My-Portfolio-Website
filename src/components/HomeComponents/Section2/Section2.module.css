@@ -1,9 +1,9 @@
 .section {
     
   /* height: 100vh; */
-  height: auto;
+  /* height: auto; */
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
