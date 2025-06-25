@@ -11,6 +11,14 @@ import Industry3 from '../../../assets/images/industry3.svg'
 import Industry4 from '../../../assets/images/industry4.svg'
 
 
+import FigLogo from '../../../assets/icons/fig-logo.svg'
+import Slack from '../../../assets/icons/slack.svg'
+import Teams from '../../../assets/icons/teams.svg'
+import Jira from '../../../assets/icons/jira.svg'
+import ReactLogo from '../../../assets/icons/react.svg'
+import Tailwind from '../../../assets/icons/tailwind.svg'
+
+
 
 export default function Section3() {
 
@@ -61,7 +69,7 @@ export default function Section3() {
 
         <div className="grid grid-cols-1 md:grid-cols-6 gap-16 items-start mb-20 text-white mt-10 md:mt-56">
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
-                <p className={` text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>I work across various disciplines not limited to</p>
+                <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>I work across various disciplines not limited to</p>
             </div>
             <div className={` ${style.dmSans} md:col-span-4`}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -132,6 +140,21 @@ export default function Section3() {
                 </div>
             </div>
 
+        </div>
+
+
+        <div className={`mt-20 md:mt-56`}>
+            <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
+                <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>Tools I use regularly</p>
+            </div>
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-5 lg:mt-10">
+                <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={FigLogo} alt="" /></div>
+                <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={Slack} alt="" /></div>
+                <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={Teams} alt="" /></div>
+                <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={Jira} alt="" /></div>
+                <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={ReactLogo} alt="" /></div>
+                <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={Tailwind} alt="" /></div>
+            </div>
         </div>
 
 
