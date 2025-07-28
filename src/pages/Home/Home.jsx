@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 //import Img from '../../assets/images/thum4.png'
 import Header from '../../components/Header/Header'
@@ -13,17 +13,36 @@ import Footer from '../../components/Footer/Footer'
 
 import './Home.css'
 
-export default function Home() {
+//import lenis from 'lenis';
+//import Lenis from '@studio-freight/lenis';
 
-    
+import { Element } from 'react-scroll';
+
+export default function Home() {
+  
+
+  
 
   return (
     <div>
         <Header />
-        <Section1  />
-        <Section2 />
-        <Section3 />
-        <Footer />
+
+        <Element name="home">
+          <Section1   />
+        </Element>
+        
+        <Element name="project">
+          <Section2 />
+        </Element>
+
+        <Element name="about">
+          <Section3 />
+        </Element>
+        
+        <Element name="contact">
+          <Footer />
+        </Element>
+        
         {/* <div className='section1'>
             <div className="ripple-background" ref={rippleRef}>
                 <h1 className="text-3xl font-bold text-blue-600">Tailwind is Working 🎉</h1>

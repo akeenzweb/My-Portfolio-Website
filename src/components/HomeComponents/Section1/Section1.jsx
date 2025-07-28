@@ -103,7 +103,7 @@ export default function Home() {
                                   <ScrambleText text="AKINBOLADE" className="-mt-5 lg:mb-4 lg:-mt-9 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]" speed={120} delay={0.3} duration={5}/><br />
                                   <ScrambleText text="SALAKO" className="-mt-10 lg:-mt-0 text-center block text-3xl md:text-6xl lg:text-9xl font-semibold italic tracking-[12px] lg:tracking-[28px] leading-[60px] lg:leading-[166px]"speed={120}  delay={0.3} duration={2}/>
                                   <p className="mt-4 lg:mt-0  text-xs lg:text-base text-center tracking-[4px] font-medium opacity-25">Or just <span className="font-semibold text-[#92FF90]">Salaks</span> for short</p>
-                                  <p className="mt-5 text-center tracking-[4px] text-sm lg:text-base">A <span className="text-base lg:text-xl text-[#FF9C12] font-extrabold">PRODUCT DESIGNER</span> turning complex ideas into simple, intuitive experiences.</p>
+                                  <p className="mt-5 text-center tracking-[4px] leading-8 text-sm lg:text-base">A <span className="text-base lg:text-xl text-[#FF9C12] font-extrabold">PRODUCT DESIGNER</span> turning complex ideas into simple, intuitive experiences.</p>
                               </div>
                             </div>
                         </div>

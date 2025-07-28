@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import Lenis from '@studio-freight/lenis';
 
+
 //import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //import $ from "jquery";
@@ -30,6 +31,10 @@ function App() {
 
     requestAnimationFrame(raf);
   }, []);
+
+
+  
+  
   // const rippleRef = useRef();
 
   // useEffect(() => {
