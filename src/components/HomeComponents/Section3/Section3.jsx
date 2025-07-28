@@ -71,7 +71,8 @@ export default function Section3() {
 
         <div className="grid grid-cols-1 md:grid-cols-11 gap-16 items-start mb-20 text-white">
             <div className="order-2 md:order-1 md:col-span-7">
-                <div className={`${style.dmSans} tracking-[6px] font-medium text-3xl text-[#AAAAAA] leading-[58px]`}><p>I’m a <span className="text-5xl font-extrabold text-white">PRODUCT DESIGNER</span> who cares about <span>clarity, craft,</span> and <span>impact.</span></p></div>
+                <div className={`${style.dmSans} hidden lg:block tracking-[6px] font-medium text-3xl text-[#AAAAAA] leading-[58px]`}><p>I’m a <span className="text-5xl font-extrabold text-white">PRODUCT DESIGNER</span> who cares about <span>clarity, craft,</span> and <span>impact.</span></p></div>
+                <div className={`${style.dmSans} block lg:hidden tracking-[6px] font-medium text-2xl text-[#AAAAAA] leading-[48px]`}><p>I’m a <br /> <span className="text-5xl leading-[58px] font-extrabold text-white">PRODUCT DESIGNER</span> who cares about <span>clarity, craft,</span> and <span>impact.</span></p></div>
                 <div className={`${style.dmSans} tracking-[1px] font-normal text-base text-[#AAAAAA] leading-9 mt-8 `}><p>I design with intent—shaping experiences that feel <span className=" font-extrabold text-[#FFE11D]">SEAMLESS</span>, <span className=" font-extrabold text-[#22D71C]">THOUGHTFUL</span>, and quietly <span className=" font-extrabold text-[#FF6D12]">POWERFUL</span>.
                 I love working at the intersection of detail and strategy, where good ideas become great products. Always iterating, always learning, always building toward something meaningful.</p></div>
             </div>
