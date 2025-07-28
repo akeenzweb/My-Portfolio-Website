@@ -18,6 +18,8 @@ import Jira from '../../../assets/icons/jira.svg'
 import ReactLogo from '../../../assets/icons/react.svg'
 import Tailwind from '../../../assets/icons/tailwind.svg'
 
+import RefPic1 from '../../../assets/images/ref-pic1.svg'
+
 
 
 export default function Section3() {
@@ -53,7 +55,7 @@ export default function Section3() {
 
 
   return (
-    <div className={`${style.rippleBackground} h-[6800px] lg:h-[4800px] z-0 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
+    <div className={`${style.rippleBackground} h-[6400px] lg:h-[4900px] z-0 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
         <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>ABOUT ME</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-11 gap-16 items-start mb-20 text-white">
@@ -154,6 +156,23 @@ export default function Section3() {
                 <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={Jira} alt="" /></div>
                 <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={ReactLogo} alt="" /></div>
                 <div className="bg-[#242424] rounded-sm h-16 lg:h-24 flex justify-center items-center "><img className="w-5 lg:w-10" src={Tailwind} alt="" /></div>
+            </div>
+        </div>
+
+
+        <div className={`${style.dmSans} mt-20 md:mt-56`}>
+            <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
+                <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>References</p>
+            </div>
+            <div className={`$ mt-5 lg:mt-10`}>
+                <div className={` bg-[#242424] h-80 w-[490px] rounded-sm`}>
+                    <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2">
+                        <img src={RefPic1} alt="" />
+                    </div>
+                    <div className="p-4 lg:p-5">
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I highly recommend Akinbolade Salako as a Product Designer. He brings strong design thinking, user empathy, and attention to detail to every project. Reliable, collaborative, and skilled in tools like Figma and prototyping, he’s been an asset to our team and a pleasure to work with.</p>
+                    </div>
+                </div>
             </div>
         </div>
 

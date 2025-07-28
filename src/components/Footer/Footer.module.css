@@ -1,0 +1,22 @@
+
+
+.redB {
+  border: 2px solid red;
+}
+
+.dmSans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.sourceCode {
+  font-family: "Source Code Pro", monospace;
+}
+
+.rippleBackground {
+  /* background-image: url("/public/bggg.png"); */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
