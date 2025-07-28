@@ -184,11 +184,11 @@ export default function Section3() {
                 {referenceData.map((ref, index) => (
                     <div key={index} className="bg-[#242424] min-w-[290px] lg:min-w-[410px] rounded-sm overflow-hidden">
                         {/* Image Section */}
-                        <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2 flex items-center">
+                        <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2 flex items-center h-20">
                             <img className="mr-4 h-14 w-14 rounded-full" src={ref.image} alt="" />
                             <div>
-                                <h1 className="text-xl font-semibold text-white tracking-[1px]">{ref.name}</h1>
-                                <p className="text-[#AAAAAA] text-sm">{ref.title}</p>
+                                <h1 className="text-base lg:text-xl font-semibold text-white tracking-[1px]">{ref.name}</h1>
+                                <p className="text-[#AAAAAA] text-xs lg:text-sm">{ref.title}</p>
                             </div>
                         </div>
 
@@ -199,14 +199,16 @@ export default function Section3() {
                             </p>
 
                             {/* View All button */}
-                            <div className="absolute bottom-4 right-5 bg-[#242424] pl-2">
-                                <button
-                                onClick={() => openRefModal(ref.message)}
-                                className="text-blue-400 text-sm underline"
-                                >
-                                View All
-                                </button>
-                            </div>
+                            {ref.message.length > 100 && (
+                                <div className="absolute bottom-4 right-5 bg-[#242424] pl-2">
+                                    <button
+                                        onClick={() => openRefModal(ref.message)}
+                                        className="text-[#FF9C12] font-semibold text-lg underline"
+                                        >
+                                            View All
+                                    </button>
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}
