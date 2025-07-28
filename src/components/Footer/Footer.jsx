@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 
 import style from './Footer.module.css'
 
+import { Link } from 'react-scroll';
+
 import WhatsppBtn from '../../assets/images/chat-whatsapp.svg'
 import DownloadDoc from '../../assets/icons/document-doc.svg'
 
@@ -48,8 +50,9 @@ export default function Footer() {
                 <div className={`${style.dmSans} flex justify-between mt-40 lg:mt-0`}>
                     <ul className="cursor-pointer">
                         <li className="text-xl lg:text-2xl">EXPLORE</li>
-                        <li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Projects</li>
-                        <li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">About Me</li>
+                        <Link to="home" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Home</li></Link>
+                        <Link to="project" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Projects</li></Link>
+                        <Link to="about" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">About Me</li></Link>
                         <li className="text-base lg:text-xl text-[#FF9C12] font-semibold mt-5 tracking-[6px] flex">Get CV <img className="ml-2" src={DownloadDoc} alt="" /></li>
                     </ul>
 

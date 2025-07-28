@@ -22,10 +22,10 @@ export default function Header() {
   return (
     <div >
       {/* For Laptops */}
-      <div className={`${style.header} hidden lg:block fixed top-0 left-0 w-full h-28 z-10`}>
+      <div className={`${style.header} hidden lg:block fixed top-0 left-0 w-full h-28 z-10 items-center`}>
         {/* <div className={`${style.blurOverlay}  lg:flex items-center justify-center  w-full h-28 z-10 px-4 md:px-20 `}> */}
-            <div className={`absolute top-0 left-0 flex justify-between items-center w-full z-[9999] px-4 lg:px-20`}>
-                <img src={Logo} alt="" />
+            <div className={` absolute top-3 left-0 flex justify-between items-center w-full z-[9999] px-4 lg:px-20`}>
+                <Link to="home" smooth={true} duration={1200}><img src={Logo} alt="" /></Link>
                 <ul className={`${style.dmSans} flex text-[#787878] tracking-[6px] font-semibold items-center`}>
                     <Link to="home" smooth={true} duration={1200}><li className='cursor-pointer'>Home</li></Link>
                     <Link to="project" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'>Projects</li></Link>
@@ -44,7 +44,7 @@ export default function Header() {
         {/* For Mobiles */}
         <div className={`${style.header} block lg:hidden fixed top-0 left-0 w-full h-24 z-10`}>
           <div className={`  flex justify-between items-center w-full px-4 md:px-20`}>
-              <img src={Logo} alt="" />
+              <Link to="home" smooth={true} duration={1200}><img src={Logo} alt="" /></Link>
               <div onClick={() => setIsOpen(prev => !prev)}>
                 <img src={Menu} alt="" className={isOpen ? 'hidden' : 'block'} />
                 <img src={Close} alt="" className={isOpen ? 'block' : 'hidden'} />
