@@ -66,7 +66,7 @@ export default function Section3() {
 
 
   return (
-    <div className={`${style.rippleBackground} h-[6400px] lg:h-[4900px] z-0 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
+    <div className={`${style.rippleBackground} w-full bg-[url('/public/about-bg-mobile.png')] lg:bg-[url('/public/about-bg.png')] h-[6400px] lg:h-[4900px] z-0 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
         <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>ABOUT ME</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-11 gap-16 items-start mb-20 text-white">
