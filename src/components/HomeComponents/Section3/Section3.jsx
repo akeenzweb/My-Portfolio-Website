@@ -180,7 +180,7 @@ export default function Section3() {
                     <div key={index} className="bg-[#242424] min-w-[290px] lg:w-[490px] rounded-sm">
                         {/* Image Section */}
                         <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2 flex items-center">
-                            <img className="mr-4 h-[60px] w-[60px] rounded-full" src={ref.image} alt="" />
+                            <img className="mr-4 h-14 w-14 rounded-full" src={ref.image} alt="" />
                             <div>
                                 <h1 className="text-xl font-semibold text-white tracking-[1px]">{ref.name}</h1>
                                 <p className="text-[#AAAAAA]">{ref.title}</p>
@@ -214,7 +214,7 @@ export default function Section3() {
                 <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center px-4">
                     <div className="bg-white rounded-md max-w-lg w-full p-6 max-h-[80vh] overflow-y-auto">
                         <h2 className="text-xl font-semibold mb-4">Full Content</h2>
-                        <p className="text-gray-800">{}</p>
+                        <p className="text-gray-800">{modalData}</p>
                         <button
                         onClick={() => setShowModal(false)}
                         className="mt-6 text-red-500 underline"
