@@ -66,13 +66,13 @@ export default function Section3() {
 
 
   return (
-    <div className={`${style.rippleBackground} w-full bg-[url('/public/about-bg-mobile.png')] lg:bg-[url('/public/about-bg.png')] h-[6400px] lg:h-[4900px] z-0 px-4 lg:px-20 py-12 lg:py-32`} ref={rippleRef}>
+    <div className={`${style.rippleBackground} w-full bg-[url('/public/about-bg-mobile.png')] lg:bg-[url('/public/about-bg.png')] h-[6400px] lg:h-[4900px] z-0 px-4 lg:px-20 py-12 lg:py-32`}>
         <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>ABOUT ME</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-11 gap-16 items-start mb-20 text-white">
             <div className="order-2 md:order-1 md:col-span-7">
                 <div className={`${style.dmSans} hidden lg:block tracking-[6px] font-medium text-3xl text-[#AAAAAA] leading-[58px]`}><p>I’m a <span className="text-5xl font-extrabold text-white">PRODUCT DESIGNER</span> who cares about <span>clarity, craft,</span> and <span>impact.</span></p></div>
-                <div className={`${style.dmSans} block lg:hidden tracking-[6px] font-medium text-2xl text-[#AAAAAA] leading-[48px]`}><p>I’m a <br /> <span className="text-5xl leading-[58px] font-extrabold text-white">PRODUCT DESIGNER</span> who cares about <span>clarity, craft,</span> and <span>impact.</span></p></div>
+                <div className={`${style.dmSans} block lg:hidden tracking-[2px] font-medium text-2xl text-[#AAAAAA] leading-[48px]`}><p>I’m a <br /> <span className="text-5xl leading-[58px] font-extrabold text-white">PRODUCT DESIGNER</span> who cares about <span>clarity, craft,</span> and <span>impact.</span></p></div>
                 <div className={`${style.dmSans} tracking-[1px] font-normal text-base text-[#AAAAAA] leading-9 mt-8 `}><p>I design with intent—shaping experiences that feel <span className=" font-extrabold text-[#FFE11D]">SEAMLESS</span>, <span className=" font-extrabold text-[#22D71C]">THOUGHTFUL</span>, and quietly <span className=" font-extrabold text-[#FF6D12]">POWERFUL</span>.
                 I love working at the intersection of detail and strategy, where good ideas become great products. Always iterating, always learning, always building toward something meaningful.</p></div>
             </div>
@@ -176,15 +176,15 @@ export default function Section3() {
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
                 <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>References</p>
             </div>
-                <div className={`flex gap-5 mt-5 lg:mt-10`}>
+                <div className={`flex gap-5 mt-5 lg:mt-10 overflow-scroll lg:overflow-hidden`}>
                 {referenceData.map((ref, index) => (
-                    <div key={index} className="bg-[#242424] min-w-[290px] lg:w-[490px] rounded-sm">
+                    <div key={index} className="bg-[#242424] min-w-[290px] lg:min-w-[410px] rounded-sm overflow-hidden">
                         {/* Image Section */}
                         <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2 flex items-center">
                             <img className="mr-4 h-14 w-14 rounded-full" src={ref.image} alt="" />
                             <div>
                                 <h1 className="text-xl font-semibold text-white tracking-[1px]">{ref.name}</h1>
-                                <p className="text-[#AAAAAA]">{ref.title}</p>
+                                <p className="text-[#AAAAAA] text-sm">{ref.title}</p>
                             </div>
                         </div>
 
