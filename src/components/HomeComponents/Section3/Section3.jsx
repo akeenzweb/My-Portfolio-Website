@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import style from './Section3.module.css'
 
@@ -18,11 +18,22 @@ import Jira from '../../../assets/icons/jira.svg'
 import ReactLogo from '../../../assets/icons/react.svg'
 import Tailwind from '../../../assets/icons/tailwind.svg'
 
-import RefPic1 from '../../../assets/images/ref-pic1.svg'
+//import RefPic1 from '../../../assets/images/ref-pic1.svg'
+
+
+import referenceData from '../../ReferenceData'
 
 
 
 export default function Section3() {
+
+    const [modalData, setModalData] = useState(null);
+    const [showModal, setShowModal] = useState(false);
+
+    const openRefModal  = (message) => {
+        setShowModal(true)
+        setModalData(message)
+    }
 
     const rippleRef = useRef();
         
@@ -164,16 +175,55 @@ export default function Section3() {
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
                 <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>References</p>
             </div>
-            <div className={`$ mt-5 lg:mt-10`}>
-                <div className={` bg-[#242424] h-80 w-[490px] rounded-sm`}>
-                    <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2">
-                        <img src={RefPic1} alt="" />
+                <div className={`flex gap-5 mt-5 lg:mt-10`}>
+                {referenceData.map((ref, index) => (
+                    <div key={index} className="bg-[#242424] min-w-[290px] lg:w-[490px] rounded-sm">
+                        {/* Image Section */}
+                        <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2 flex items-center">
+                            <img className="mr-4 h-[60px] w-[60px] rounded-full" src={ref.image} alt="" />
+                            <div>
+                                <h1 className="text-xl font-semibold text-white tracking-[1px]">{ref.name}</h1>
+                                <p className="text-[#AAAAAA]">{ref.title}</p>
+                            </div>
+                        </div>
+
+                        {/* Text Section with line clamp */}
+                        <div className="p-4 lg:p-5 relative">
+                            <p className="text-sm lg:text-base tracking-[1px] text-[#AAAAAA] leading-8 lg:leading-9 line-clamp-6">
+                                {ref.message}
+                            </p>
+
+                            {/* View All button */}
+                            <div className="absolute bottom-4 right-5 bg-[#242424] pl-2">
+                                <button
+                                onClick={() => openRefModal(ref.message)}
+                                className="text-blue-400 text-sm underline"
+                                >
+                                View All
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div className="p-4 lg:p-5">
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-8">I highly recommend Akinbolade Salako as a Product Designer. He brings strong design thinking, user empathy, and attention to detail to every project. Reliable, collaborative, and skilled in tools like Figma and prototyping, he’s been an asset to our team and a pleasure to work with.</p>
+                ))}
+            </div>
+            
+
+
+            {/* Modal */}
+            {showModal && (
+                <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center px-4">
+                    <div className="bg-white rounded-md max-w-lg w-full p-6 max-h-[80vh] overflow-y-auto">
+                        <h2 className="text-xl font-semibold mb-4">Full Content</h2>
+                        <p className="text-gray-800">{}</p>
+                        <button
+                        onClick={() => setShowModal(false)}
+                        className="mt-6 text-red-500 underline"
+                        >
+                        Close
+                        </button>
                     </div>
                 </div>
-            </div>
+            )}
         </div>
 
 

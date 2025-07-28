@@ -37,7 +37,7 @@ export default function Footer() {
     
   return (
     <div>
-        <div className={`${style.rippleBackground} w-full bg-[url('/public/footer-bg-mobile.png')] lg:bg-[url('/public/footer-bg.png')] min-h-screen px-4 lg:px-20 z-0 bg-[#1c1c1c]`} ref={rippleRef}>
+        <div className={`${style.rippleBackground} w-full bg-[url('/public/footer-bg-mobile2.png')] lg:bg-[url('/public/footer-bg.png')] min-h-screen px-4 lg:px-20 z-0 bg-[#1c1c1c]`} ref={rippleRef}>
             <div className="pt-20 lg:pt-40  text-white block lg:flex justify-between  ">
                 <div>
                     <h1 className={`${style.sourceCode} text-lg lg:text-2xl text-[#AAAAAA]`}>Let’s work together</h1>
