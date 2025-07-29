@@ -30,6 +30,16 @@ export default function ProjectView() {
                 <p className='text-base tracking-[1px] text-[#AAAAAA] leading-9'>At the heart of this project was the client’s vision: a brand website that embodies elegance while remaining approachable and relatable. Busayo wanted a digital home that reflected not only her refined taste but also her friendly, down-to-earth personality. The idea was to marry sophistication with simplicity—to create a visual narrative that speaks with poise but welcomes with warmth. The design needed to inspire trust, spark curiosity, and leave a lasting impression without ever feeling distant or cold.</p>
                 <img className='absolute -top-44 right-0' src={Bulb} alt="" />
             </div>
+
+            {/* THE APPROACH */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-20">
+                <div className='col-span-3'>
+                    <h1 className='text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4'>The Approach</h1>
+                    <p className='text-base tracking-[1px] text-[#AAAAAA] leading-9'>The project began with initial discovery sessions, where I engaged the client in conversations to understand her tone, preferences, and vision. From there, I moved into the design thinking process, starting with quick sketch explorations and low-fidelity wireframes to define the structure and flow. This allowed us to experiment with layout ideas early and stay iterative. Feedback loops were constant—client input shaped every major design decision. With the sitemap and wireframes in place, I advanced into visual mockups and interactive prototypes, focusing on hierarchy, typography, and gentle micro-interactions that would eventually bring the site to life. Every step of the way, I remained in dialogue with Busayo, refining the interface based on both aesthetic goals and real usability concerns.</p>
+                </div>
+                <div className='col-span-2'>some text here</div>
+            </div>
+
         </div>
     </div>
   )
