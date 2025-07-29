@@ -35,6 +35,13 @@ const referenceData = [
       "I’ve had the pleasure of working closely with Akinbolade Salako, and I can confidently say that he is one of the most exceptional product designers I’ve encountered. His ability to blend user-centric thinking with pixel-perfect execution is truly rare. What sets Salako apart is his incredible attention to detail. Not just in the visual design, but in how the product feels, flows, and functions. He anticipates edge cases, question assumptions, and always advocate for the end user. Beyond design skills, Salako is a thoughtful collaborator who listens deeply, communicates clearly, works seamlessly with cross-functional teams, and highly dependable. He will be a rare catch for any team, as he brings clarity, creativity, and craft to everything he does.",
     image: SodeeqT, // This could be a local or online path
   },
+  {
+    name: "Osinakachi Nwakire",
+    title: "Data Analyst | AI and Automation Specialist",
+    message:
+      "Salako has consistently demonstrated himself to be an invaluable asset to the company, exhibiting remarkable growth and making a significant impact through his collaborative efforts with the team. His availability to address pressing issues, coupled with his dedication to conducting thorough research and refining his designs, showcases his mastery of his craft. I have had the privilege of witnessing his ascent to this distinguished position, which is a testament to his relentless hard work and unwavering commitment. It is clear that wherever his journey takes him, he will undoubtedly shine and continue to be an irreplaceable asset to any organization fortunate enough to have him.",
+    image: OsiN,
+  },
   
 ];
 

@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import style from './Section3.module.css'
 
 import Profile from '../../../assets/images/img-profile.png'
@@ -34,6 +38,31 @@ export default function Section3() {
         setShowModal(true)
         setModalData(message)
     }
+
+    const settings = {
+        className: "center",
+        // centerMode: true,
+        infinite: true,
+        // centerPadding: "60px",
+        slidesToShow: 3, // You can adjust this
+        speed: 500,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 2,
+            centerPadding: "40px",
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+            slidesToShow: 1,
+            centerPadding: "20px",
+            },
+        },
+        ],
+    };
 
     const rippleRef = useRef();
         
@@ -185,9 +214,45 @@ export default function Section3() {
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
                 <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>References</p>
             </div>
-                <div className={`flex gap-5 mt-5 lg:mt-10 overflow-scroll lg:overflow-hidden`}>
+                {/* <div className={`flex gap-5 mt-5 lg:mt-10 overflow-scroll lg:overflow-hidden`}>
                 {referenceData.map((ref, index) => (
                     <div key={index} className="bg-[#242424] min-w-[290px] lg:min-w-[410px] rounded-sm overflow-hidden">
+                        
+                        <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2 flex items-center h-20">
+                            <img className="mr-4 h-14 w-14 rounded-full" src={ref.image} alt="" />
+                            <div>
+                                <h1 className="text-base lg:text-xl font-semibold text-white tracking-[1px]">{ref.name}</h1>
+                                <p className="text-[#AAAAAA] text-xs lg:text-sm">{ref.title}</p>
+                            </div>
+                        </div>
+
+                       
+                        <div className="p-4 lg:p-5 relative">
+                            <p className="text-sm lg:text-base tracking-[1px] text-[#AAAAAA] leading-8 lg:leading-9 line-clamp-6">
+                                {ref.message}
+                            </p>
+
+                            
+                            {ref.message.length > 100 && (
+                                <div className="absolute bottom-4 right-5 bg-[#242424] pl-2">
+                                    <button
+                                        onClick={() => openRefModal(ref.message)}
+                                        className="text-[#FF9C12] font-semibold text-lg underline"
+                                        >
+                                            View All
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                ))}
+            </div> */}
+
+            <div className="slider-container mt-5 lg:mt-10 lg:-ml-10">
+      <Slider {...settings}>
+        {referenceData.map((ref, index) => (
+            <div className="px-5 lg:px-20">
+                <div key={index} className="bg-[#242424] min-w-[290px] lg:min-w-[410px] rounded-sm ">
                         {/* Image Section */}
                         <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2 flex items-center h-20">
                             <img className="mr-4 h-14 w-14 rounded-full" src={ref.image} alt="" />
@@ -216,8 +281,11 @@ export default function Section3() {
                             )}
                         </div>
                     </div>
-                ))}
             </div>
+            
+        ))}
+      </Slider>
+    </div>
             
 
 
