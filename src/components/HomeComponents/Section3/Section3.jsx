@@ -24,6 +24,9 @@ import Tailwind from '../../../assets/icons/tailwind.svg'
 
 //import RefPic1 from '../../../assets/images/ref-pic1.svg'
 
+import RightArrow from '../../../assets/icons/right.svg'
+import LeftArrow from '../../../assets/icons/left.svg'
+
 
 import referenceData from '../../ReferenceData'
 
@@ -64,6 +67,27 @@ export default function Section3() {
         ],
     };
 
+    const NextArrow = ({ onClick }) => (
+        <div
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10 
+                    lg:right-[-30px] right-2 cursor-pointer"
+            onClick={onClick}
+        >
+            <img className="w-[30px] lg:w-[40px]" src={RightArrow} alt="" />
+        </div>
+        );
+
+        const PrevArrow = ({ onClick }) => (
+        <div
+            className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10 
+                    lg:left-[-30px] left-2 cursor-pointer"
+            onClick={onClick}
+        >
+            <img className="w-[30px] lg:w-[40px]" src={LeftArrow} alt="" />
+        </div>
+    );
+
+
     const rippleRef = useRef();
         
     useEffect(() => {
@@ -95,7 +119,7 @@ export default function Section3() {
 
 
   return (
-    <div className={`${style.rippleBackground} w-full bg-[url('/public/about-bg-mobile.png')] lg:bg-[url('/public/about-bg.png')] h-[6050px] lg:h-[4900px] z-0 px-4 lg:px-20 py-12 lg:py-32`}>
+    <div className={`${style.rippleBackground} w-full bg-[url('/public/about-bg-mobile.png')] lg:bg-[url('/public/about-bg.png')] h-auto z-0 px-4 lg:px-20 py-12 lg:py-32`}>
         <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>ABOUT ME</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-11 gap-16 items-start mb-20 text-white">
@@ -249,7 +273,7 @@ export default function Section3() {
             </div> */}
 
             <div className="slider-container mt-5 lg:mt-10 lg:-ml-10">
-      <Slider {...settings}>
+      <Slider {...settings} nextArrow={<NextArrow />} prevArrow={<PrevArrow />}>
         {referenceData.map((ref, index) => (
             <div className="px-5 lg:px-20">
                 <div key={index} className="bg-[#242424] min-w-[290px] lg:min-w-[410px] rounded-sm ">
