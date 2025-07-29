@@ -6,6 +6,11 @@ import Cover1 from '../../assets/images/cover1.svg'
 import Bulb from '../../assets/images/bulb.svg'
 import Sketch1 from '../../assets/images/sketch1.png'
 import Wireframes1 from '../../assets/images/Wireframes1.svg'
+import Wireframesii from '../../assets/images/Wireframesii.svg'
+import Font1 from '../../assets/images/font1.png'
+import Color1 from '../../assets/images/color1.png'
+import Mockup1 from '../../assets/images/Mockups1.svg'
+import Mockup1ii from '../../assets/images/Mockups1ii.svg'
 
 export default function ProjectView() {
   return (
@@ -45,7 +50,38 @@ export default function ProjectView() {
             {/* WIREFRAMES */}
             <div className='relative border-b border-[#444343] pb-20 mt-20'>
                 <h1 className='text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4'>Wireframes</h1>
-                <div className=''><img src={Wireframes1} alt="" /></div>
+                <div className='hidden lg:block'><img src={Wireframes1} alt="" /></div>
+                <div className='block lg:hidden'><img src={Wireframesii} alt="" /></div>
+            </div>
+
+            {/* THE BUILD */}
+            <div className='relative border-b border-[#444343] pb-20 mt-20'>
+                <h1 className='text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4'>The Build</h1>
+                <p className='text-base tracking-[1px] text-[#AAAAAA] leading-9'>This wasn’t just a design project—I personally built the website from the ground up using React. That gave me full control over the user experience and performance. I implemented subtle yet purposeful animations, like a fine line that gently follows users as they scroll, guiding their journey without distraction. One of the more personal touches, a collage of curated images, was added later in the project after thoughtful discussions with Busayo, and it now serves as a visual anchor that tells part of her story. The site is fully responsive, lightweight, and optimized for clarity and speed, ensuring her brand is well represented across all devices.</p>
+                {/* <img className='absolute -top-44 right-0' src={Bulb} alt="" /> */}
+            </div>
+
+            {/* FONT & COLOR */}
+            <div className=" mt-20 ">
+                <h1 className='text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4'>Font & Colors</h1>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+                    <div className=''><img className='' src={Font1} alt="" /></div>
+                    <div className=''><img className='' src={Color1} alt="" /></div>
+                </div>
+            </div>
+
+            {/* THE MOCKUPS */}
+            <div className='relative border-b border-[#444343] pb-20 mt-20'>
+                <h1 className='text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4'>The Mockup</h1>
+                <div className='hidden lg:block'><img src={Mockup1} alt="" /></div>
+                <div className='block lg:hidden'><img src={Mockup1ii} alt="" /></div>
+            </div>
+
+            {/* PROJECT SUMMARY */}
+            <div className='relative border-b border-[#444343] pb-20 mt-20'>
+                <h1 className='text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4'>Project Summary</h1>
+                <p className='text-base tracking-[1px] text-[#AAAAAA] leading-9'>This project was a complete design and build of a personal brand website for Busayo Salako, a dynamic individual whose presence needed to be captured both visually and experientially. The goal was to create a digital space that communicated elegance while maintaining a warm, friendly vibe—true to Busayo’s identity. From discovery to deployment, the project involved user-centered design thinking, close client collaboration, and a focus on clean yet expressive front-end development using React. With subtle animations and personal touches like a responsive collage, the website now offers visitors a refined yet inviting user journey.</p>
+                {/* <img className='absolute -top-44 right-0' src={Bulb} alt="" /> */}
             </div>
 
         </div>
