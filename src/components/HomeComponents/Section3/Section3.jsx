@@ -140,7 +140,7 @@ export default function Section3() {
         </div>
 
 
-         <div className="grid grid-cols-1 md:grid-cols-6 gap-8 items-start mb-20 text-white mt-20 md:mt-56">
+         <div className="grid grid-cols-1 md:grid-cols-6 gap-4 lg:gap-8 items-start mb-20 text-white mt-20 md:mt-56">
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
                 <p className={` text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>Industries I’ve worked in</p>
                 <p className="text-[#AAAAAA] tracking-[1px] leading-9 text-base mt-4">As a product designer, I’ve worked across several industries, each presenting unique design challenges and opportunities for innovation</p>
@@ -190,7 +190,7 @@ export default function Section3() {
             <img src={Figma} alt="" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-16 items-start mb-20 text-white mt-10 md:mt-56">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 lg:gap-16 items-start mb-20 text-white mt-20 md:mt-56">
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
                 <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>I work across various disciplines not limited to</p>
             </div>

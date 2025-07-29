@@ -27,11 +27,14 @@ export default function Header() {
             <div className={` absolute top-3 left-0 flex justify-between items-center w-full z-[9999] px-4 lg:px-20`}>
                 <Link to="home" smooth={true} duration={1200}><img src={Logo} alt="" /></Link>
                 <ul className={`${style.dmSans} flex text-[#787878] tracking-[6px] font-semibold items-center`}>
-                    <Link to="home" smooth={true} duration={1200}><li className='cursor-pointer'>Home</li></Link>
-                    <Link to="project" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'>Projects</li></Link>
-                    <Link to="about" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'>About Me</li></Link>
-                    <li className='ml-16 cursor-pointer flex items-center text-[#FF9C12] font-semibold'>Get CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>
-                    <Link to="contact" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'><div className='bg-white uppercase text-[#222222] px-5 py-2 rounded-[4px]'>Contacts</div></li></Link>
+                    <li className=''><Link to="home" smooth={true} duration={1200} spy={true} offset={-80} activeClass="text-[#FF9C12] font-bold border-b-2 border-[#FF9C12]" className="cursor-pointer"> Home </Link></li>
+                    <li className=''><Link to="project" smooth={true} duration={1200} spy={true} offset={-80} activeClass="text-[#FF9C12] font-bold border-b-2 border-[#FF9C12]" className="ml-16 cursor-pointer"> Projects </Link></li>
+                    <li className=''><Link to="about" smooth={true} duration={1200} spy={true} offset={-80} activeClass="text-[#FF9C12] font-bold border-b-2 border-[#FF9C12]" className="ml-16 cursor-pointer"> About Me </Link></li>
+                    {/* <Link to="project" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'>Projects</li></Link> */}
+                    {/* <Link to="about" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'>About Me</li></Link> */}
+                    <li className='ml-16 cursor-pointer flex items-center text-[#f3ece2] font-semibold'>Get CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>
+                    <li className='bg-white uppercase text-[#222222] px-5 py-2 rounded-[4px] ml-16 cursor-pointer'><Link to="contact" smooth={true} duration={1200} spy={true} offset={-80} activeClass="text-[#CF8113] " className=""> Contacts</Link></li>
+                    {/* <Link to="contact" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'><div className='bg-white uppercase text-[#222222] px-5 py-2 rounded-[4px]'>Contacts</div></li></Link> */}
                 </ul>
             </div>
             <div className={`${style.blurOverlay} absolute top-0 left-0 lg:flex items-center justify-center  w-full h-28 z-[-9999] px-4 md:px-20 `}>
@@ -65,7 +68,7 @@ export default function Header() {
                         <Link to="home" smooth={true} duration={1200} onClick={() => setIsOpen(false)}><li className='mb-5'>Home</li></Link>
                         <Link to="project" smooth={true} duration={1200} onClick={() => setIsOpen(false)}><li className='mb-5'>Projects</li></Link>
                         <Link to="about" smooth={true} duration={1200} onClick={() => setIsOpen(false)}><li className='mb-5'>About Me</li></Link>
-                        <li className='mb-5 flex items-center text-[#FF9C12] font-semibold'>Get CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>
+                        <li className='mb-5 flex items-center font-semibold'>Get CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>
                         <Link to="contact" smooth={true} duration={1200} onClick={() => setIsOpen(false)}><li className='mb-5'><div className='bg-white uppercase text-[#222222] px-5 py-2 rounded-[4px]'>Contacts</div></li></Link>
                       </ul>
                     </motion.div>
