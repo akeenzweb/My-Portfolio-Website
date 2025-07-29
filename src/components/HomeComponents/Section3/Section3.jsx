@@ -268,7 +268,7 @@ export default function Section3() {
                                 <div className="absolute bottom-4 right-5 bg-[#242424] pl-2">
                                     <button
                                         onClick={() => openRefModal(ref)}
-                                        className="text-[#FF9C12] font-semibold text-lg underline"
+                                        className="text-[#FF9C12] bg-white rounded-sm px-4 py-2 font-semibold text-sm"
                                         >
                                             View All
                                     </button>
@@ -305,7 +305,7 @@ export default function Section3() {
                                                 <div className="absolute bottom-4 right-5 bg-[#242424] pl-2">
                                                     <button
                                                         onClick={() => openRefModal(ref)}
-                                                        className="text-[#FF9C12] font-semibold text-lg underline"
+                                                        className="text-[#FF9C12] bg-white rounded-sm px-4 py-2 font-semibold text-sm"
                                                         >
                                                             View All
                                                     </button>
