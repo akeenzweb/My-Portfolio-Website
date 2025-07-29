@@ -66,7 +66,7 @@ export default function Section3() {
 
 
   return (
-    <div className={`${style.rippleBackground} w-full bg-[url('/public/about-bg-mobile.png')] lg:bg-[url('/public/about-bg.png')] h-[6400px] lg:h-[4900px] z-0 px-4 lg:px-20 py-12 lg:py-32`}>
+    <div className={`${style.rippleBackground} w-full bg-[url('/public/about-bg-mobile.png')] lg:bg-[url('/public/about-bg.png')] h-[6050px] lg:h-[4900px] z-0 px-4 lg:px-20 py-12 lg:py-32`}>
         <h1 className={`${style.dmSans} mb-20 lg:mb-48 text-white text-center font-semibold text-xl lg:text-2xl tracking-[6px]`}>ABOUT ME</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-11 gap-16 items-start mb-20 text-white">
@@ -81,40 +81,8 @@ export default function Section3() {
             </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-16 items-start mb-20 text-white mt-10 md:mt-56">
-            <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
-                <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>I work across various disciplines not limited to</p>
-            </div>
-            <div className={` ${style.dmSans} md:col-span-4`}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
-                        <h1 className="font-bold text-xl md:text-2xl mb-8">User Experience (UX) Design</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Focusing on user research, journey mapping, wireframing, and usability testing to ensure products are intuitive and user-centered.</p>
-                    </div>
 
-                    <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
-                        <h1 className="font-bold text-xl md:text-2xl mb-8">User Interface (UI) Design</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Crafting visually engaging and accessible interfaces that align with brand identity and enhance usability.</p>
-                    </div>
-
-                    <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
-                        <h1 className="font-bold text-xl md:text-2xl mb-8">Design Systems</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Building scalable and consistent UI components and guidelines to streamline product development across teams.</p>
-                    </div>
-
-                    <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
-                        <h1 className="font-bold text-xl md:text-2xl mb-8">Prototyping & Validation</h1>
-                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Creating interactive prototypes to test ideas early and gather real user feedback before development.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="mt-10 md:mt-56 flex justify-center">
-            <img src={Figma} alt="" />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-8 items-start mb-20 text-white mt-20 md:mt-56">
+         <div className="grid grid-cols-1 md:grid-cols-6 gap-8 items-start mb-20 text-white mt-20 md:mt-56">
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
                 <p className={` text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>Industries I’ve worked in</p>
                 <p className="text-[#AAAAAA] tracking-[1px] leading-9 text-base mt-4">As a product designer, I’ve worked across several industries, each presenting unique design challenges and opportunities for innovation</p>
@@ -159,6 +127,43 @@ export default function Section3() {
             </div>
 
         </div>
+
+        <div className="mt-10 md:mt-56 flex justify-center">
+            <img src={Figma} alt="" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-16 items-start mb-20 text-white mt-10 md:mt-56">
+            <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
+                <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>I work across various disciplines not limited to</p>
+            </div>
+            <div className={` ${style.dmSans} md:col-span-4`}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
+                        <h1 className="font-bold text-xl md:text-2xl mb-8">User Experience (UX) Design</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Focusing on user research, journey mapping, wireframing, and usability testing to ensure products are intuitive and user-centered.</p>
+                    </div>
+
+                    <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
+                        <h1 className="font-bold text-xl md:text-2xl mb-8">User Interface (UI) Design</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Crafting visually engaging and accessible interfaces that align with brand identity and enhance usability.</p>
+                    </div>
+
+                    <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
+                        <h1 className="font-bold text-xl md:text-2xl mb-8">Design Systems</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Building scalable and consistent UI components and guidelines to streamline product development across teams.</p>
+                    </div>
+
+                    <div className="bg-[#242424] px-4 md:px-8 py-5 md:py-10 tracking-[4px]">
+                        <h1 className="font-bold text-xl md:text-2xl mb-8">Prototyping & Validation</h1>
+                        <p className="text-base tracking-[1px] text-[#AAAAAA] leading-9">Creating interactive prototypes to test ideas early and gather real user feedback before development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+       
 
 
         <div className={`mt-20 md:mt-56`}>
