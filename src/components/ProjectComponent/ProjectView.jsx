@@ -42,9 +42,10 @@ export default function ProjectView() {
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-20 ">
                 <div className='col-span-3'>
                     <h1 className='text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4'>The Approach</h1>
+                    <div className='col-span-2 block lg:hidden mb-4'><img className='' src={Sketch1} alt="" /></div>
                     <p className='text-base tracking-[1px] text-[#AAAAAA] leading-9'>The project began with initial discovery sessions, where I engaged the client in conversations to understand her tone, preferences, and vision. From there, I moved into the design thinking process, starting with quick sketch explorations and low-fidelity wireframes to define the structure and flow. This allowed us to experiment with layout ideas early and stay iterative. Feedback loops were constant—client input shaped every major design decision. With the sitemap and wireframes in place, I advanced into visual mockups and interactive prototypes, focusing on hierarchy, typography, and gentle micro-interactions that would eventually bring the site to life. Every step of the way, I remained in dialogue with Busayo, refining the interface based on both aesthetic goals and real usability concerns.</p>
                 </div>
-                <div className='col-span-2 '><img className='' src={Sketch1} alt="" /></div>
+                <div className='col-span-2 hidden lg:block'><img className='' src={Sketch1} alt="" /></div>
             </div>
 
             {/* WIREFRAMES */}

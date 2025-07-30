@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
+import { Link } from "react-router-dom";
+
 //import Img from '../../assets/images/thum4.png'
 
 import style from './Section2.module.css'
@@ -88,12 +90,14 @@ export default function Home() {
                       key={index}
                       className={` ${isMiddleColumn ? 'lg:-mt-24' : ''}`}
                     >
-                      
+                      <Link to="/project">
                         <div className="relative">
                           <h1 style={{ WebkitTextStroke: '1.22px white', textShadow: '1px 1px 2px rgba(0,0,0,0.25)' }} className="drop-shadow-md text-white text-5xl lg:text-7xl font-bold absolute -top-8 lg:-top-10 right-1 ">0{index + 1}</h1>
                           <img className="w-full h-full object-cover" src={item.coverImage} alt="" />
                           <h1 className="text-[#AAAAAA] tracking-[3px] mt-4 text-lg">{item.name}</h1>
                         </div>
+                      </Link>
+                        
                       
                     </div>
                   );

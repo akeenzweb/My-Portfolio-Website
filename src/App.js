@@ -9,6 +9,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //import $ from "jquery";
 import Home from "./pages/Home/Home";
 import Project from "./pages/Project/Project"
+
+import ScrollToTop from "./components/ScrollToTop";
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
 import "./App.css";
@@ -67,6 +69,7 @@ function App() {
 
   return (
      <Router>
+      <ScrollToTop />
       <div className="App">
         {/* <div className="ripple-background" ref={rippleRef}> */}
         <div>

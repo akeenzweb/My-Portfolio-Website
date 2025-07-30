@@ -1,13 +1,18 @@
 import React, { useEffect, useRef } from "react";
 
+import { useLocation, Link } from "react-router-dom";
+
 import style from './Footer.module.css'
 
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 import WhatsppBtn from '../../assets/images/chat-whatsapp.svg'
 import DownloadDoc from '../../assets/icons/document-doc.svg'
 
 export default function Footer() {
+  const location = useLocation();
+  // const path = location.pathname;
+
     const rippleRef = useRef();
         
           useEffect(() => {
@@ -48,11 +53,19 @@ export default function Footer() {
                 </div>
 
                 <div className={`${style.dmSans} flex justify-between mt-40 lg:mt-0`}>
-                    <ul className="cursor-pointer">
+                    <ul className={location.pathname === "/" ? "block cursor-pointer" : "hidden cursor-pointer"}>
                         <li className="text-xl lg:text-2xl">EXPLORE</li>
-                        <Link to="home" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Home</li></Link>
-                        <Link to="project" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Projects</li></Link>
-                        <Link to="about" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">About Me</li></Link>
+                        <ScrollLink to="home" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Home</li></ScrollLink>
+                        <ScrollLink to="project" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Projects</li></ScrollLink>
+                        <ScrollLink to="about" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">About Me</li></ScrollLink>
+                        <li className="text-base lg:text-xl text-[#FF9C12] font-semibold mt-5 tracking-[6px] flex">Get CV <img className="ml-2" src={DownloadDoc} alt="" /></li>
+                    </ul>
+
+                    <ul className={location.pathname !== "/" ? "block cursor-pointer" : "hidden cursor-pointer"}>
+                        <li className="text-xl lg:text-2xl">EXPLORE</li>
+                        <Link to="/"><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Home</li></Link>
+                        {/* <Link to="project" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Projects</li></Link>
+                        <Link to="about" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">About Me</li></Link> */}
                         <li className="text-base lg:text-xl text-[#FF9C12] font-semibold mt-5 tracking-[6px] flex">Get CV <img className="ml-2" src={DownloadDoc} alt="" /></li>
                     </ul>
 

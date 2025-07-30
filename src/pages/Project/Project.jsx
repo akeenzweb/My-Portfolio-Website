@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 
+
+
 import Header from '../../components/Header/Header'
+import Footer from "../../components/Footer/Footer";
 
 
 //import style from './Project.module.css'
@@ -43,6 +46,7 @@ export default function Project() {
                 <ProjectView className='w-full' />
             </div>
         </div>
+        <Footer />
     </div>
   )
 }
