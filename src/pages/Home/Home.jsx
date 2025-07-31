@@ -49,25 +49,33 @@ const selectedProject = useProjectStore((state) => state.selectedProject);
         
         {!isProjectVisible &&
           <Element name="home">
-            <Section1   />
+            <div id="home">
+              <Section1   />
+            </div>
           </Element>
         }
 
         {!isProjectVisible &&
           <Element name="project">
-            <Section2 />
+            <div id="project">
+              <Section2  />
+            </div>
           </Element>
         }
 
         {!isProjectVisible &&
           <Element name="about">
-            <Section3 />
+            <div id='about'>
+              <Section3 />
+            </div>
           </Element>
         }
         
         
         <Element name="contact">
-          <Footer />
+          <div id='contact'>
+            <Footer />
+          </div>
         </Element>
         
         {/* <div className='section1'>

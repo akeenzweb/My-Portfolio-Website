@@ -117,7 +117,7 @@ useLayoutEffect(() => {
                   <div className={` ${style.dmSans} relative bg-[#131313] mb-10 lg:mb-10 max-w-screen px-4 lg:px-20 py-12 lg:py-32`}>
                       {/* <Link to='/'><p className='text-white font-semibold cursor-pointer mb-4'>Home</p></Link> */}
                       <div onClick={() => handleScrollTo('home')} className="flex justify-start items-center mt-14 lg:mt-0 mb-4 lg:mb-5">
-                        <img className="h-14" src={BackButton} alt="" />
+                        <img className="h-10 lg:h-14" src={BackButton} alt="" />
                         {/* <p className='text-white h-10 items-center text-center align-middle font-semibold cursor-pointer mb-4'>Back</p> */}
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
