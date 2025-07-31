@@ -12,22 +12,28 @@ import Color1 from '../../assets/images/color1.png'
 import Mockup1 from '../../assets/images/Mockups1.svg'
 import Mockup1ii from '../../assets/images/Mockups1ii.svg'
 
-export default function ProjectView() {
+
+import { Link } from "react-router-dom";
+
+export default function ProjectView({project}) {
+   
+   
   return (
     <div className='h-auto'>
-        <div className={` ${style.dmSans} relative bg-[#131313] h-[480px] max-w-screen px-4 lg:px-20 py-12 lg:py-32`}>
+        <div className={` ${style.dmSans} relative bg-[#131313] h-[490px] lg:h-[480px] max-w-screen px-4 lg:px-20 py-12 lg:py-32`}>
+            <Link to='/'><p className='text-white font-semibold cursor-pointer mb-4'>Home</p></Link>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="order-2 sm:order-1  text-[#AAAAAA] mt-4 lg:mt-0">
                     <p className='text-base lg:text-3xl uppercase font-semibold lg:font-bold tracking-[2px] lg:tracking-[6px] leading-9 lg:leading-[60px]'>A Sleek, personal brand website for Busayo Salako that feels both elegant and approachable.</p>
                 </div>
-                <div className="order-1 sm:order-2 text-[#AAAAAA] flex justify-end">
+                <div className="order-1 sm:order-2 mt-12 lg:mt-0 text-[#AAAAAA] flex justify-end">
                     <div>
                         <img src={Cover1} alt="" />
-                        <p className='uppercase tracking-[6px]'>IAMBUSAYO BRAND WEBSITE</p>
+                        <p className='uppercase tracking-[6px]'>{project.name}</p>
                     </div>
                 </div>
             </div>
-            <p className="fixed top-5 -left-24 -z-0 text-[270px] text-white opacity-10 font-bold">01</p>
+            <p className="fixed top-5 -left-24 -z-0 text-[270px] text-white opacity-10 font-bold pointer-events-none">01</p>
         </div>
 
         <div className='bg-[#1C1C1C] min-h-[590px] mt-[550px] px-4 lg:px-20 py-12 lg:py-32 text-[#AAAAAA]'>

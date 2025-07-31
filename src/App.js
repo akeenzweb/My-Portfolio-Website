@@ -1,7 +1,7 @@
 // src/App.js
 //import React, { useEffect, useRef } from "react";
 import React, { useEffect } from "react";
-import Lenis from '@studio-freight/lenis';
+//import Lenis from '@studio-freight/lenis';
 
 
 //import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Project from "./pages/Project/Project"
 
-import ScrollToTop from "./components/ScrollToTop";
+//import ScrollToTop from "./components/ScrollToTop";
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
 import "./App.css";
@@ -18,22 +18,34 @@ import "./App.css";
 
 import Lines from '../src/assets/images/lines2.png'
 
+import lenis from './lenisInstance'; 
+
 function App() {
 
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // optional easing
-      smooth: true,
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
+  function raf(time) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
-  }, []);
+  }
+
+  requestAnimationFrame(raf);
+}, []);
+
+
+// useEffect(() => {
+//     const lenis = new Lenis({
+//       duration: 1.2,
+//       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // optional easing
+//       smooth: true,
+//     });
+
+//     function raf(time) {
+//       lenis.raf(time);
+//       requestAnimationFrame(raf);
+//     }
+
+//     requestAnimationFrame(raf);
+//   }, []);
 
 
   
@@ -69,7 +81,7 @@ function App() {
 
   return (
      <Router>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <div className="App">
         {/* <div className="ripple-background" ref={rippleRef}> */}
         <div>

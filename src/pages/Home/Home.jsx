@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 
 //import Img from '../../assets/images/thum4.png'
 import Header from '../../components/Header/Header'
+
+import { useProjectStore } from '../../store/projectStore';
+
+import ProjectContainer from '../../components/ProjectContainer/ProjectContainer2';
+
 
 
 import Section1 from '../../components/HomeComponents/Section1/Section1'
@@ -9,6 +14,8 @@ import Section2 from '../../components/HomeComponents/Section2/Section2'
 import Section3 from '../../components/HomeComponents/Section3/Section3'
 
 import Footer from '../../components/Footer/Footer'
+
+import lenis from '../../lenisInstance'; 
 
 
 import './Home.css'
@@ -20,24 +27,44 @@ import { Element } from 'react-scroll';
 
 export default function Home() {
   
+const isProjectVisible = useProjectStore((state) => state.isProjectVisible);
+const selectedProject = useProjectStore((state) => state.selectedProject);
 
-  
+
+ useEffect(() => {
+    if (isProjectVisible) {
+      lenis.scrollTo(0, {
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+    }
+  }, [isProjectVisible]);
 
   return (
     <div>
         <Header />
+        {isProjectVisible  && selectedProject &&  <ProjectContainer project={selectedProject} />}
 
-        <Element name="home">
-          <Section1   />
-        </Element>
+        {/* {isProjectVisible   &&  <ProjectConTest  />} */}
         
-        <Element name="project">
-          <Section2 />
-        </Element>
+        {!isProjectVisible &&
+          <Element name="home">
+            <Section1   />
+          </Element>
+        }
 
-        <Element name="about">
-          <Section3 />
-        </Element>
+        {!isProjectVisible &&
+          <Element name="project">
+            <Section2 />
+          </Element>
+        }
+
+        {!isProjectVisible &&
+          <Element name="about">
+            <Section3 />
+          </Element>
+        }
+        
         
         <Element name="contact">
           <Footer />

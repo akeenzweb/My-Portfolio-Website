@@ -18,6 +18,7 @@
   /* Adjusted gradient mask to stop blur before the bottom edge */
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  /* -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%); */
   
   pointer-events: none;
   z-index: 1;

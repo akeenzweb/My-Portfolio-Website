@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer";
 
 //import style from './Project.module.css'
 
-import ProjectView from '../../components/ProjectComponent/ProjectView'
+import ProjectView from '../../components/ProjectView/ProjectView'
 
 import Banner1 from '../../assets/images/banner1.svg'
 import Banner1Mobile from '../../assets/images/banner1-mobileiv.svg'

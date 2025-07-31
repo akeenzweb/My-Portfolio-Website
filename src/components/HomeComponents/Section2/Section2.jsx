@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+
+import { useProjectStore } from '../../../store/projectStore';
 
 //import Img from '../../assets/images/thum4.png'
 
@@ -16,6 +18,15 @@ import project6 from '../../../assets/projects/project6.png'
 //import bg from '../../../assets/images/Section2bg.png'
 
 export default function Home() {
+  const setProjectVisible = useProjectStore((state) => state.setProjectVisible);
+  const setSelectedProject = useProjectStore((state) => state.setSelectedProject);
+  // const isProjectVisible = useProjectStore((state) => state.isProjectVisible);
+  // const selectedProject = useProjectStore((state) => state.selectedProject);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+    setProjectVisible(true);
+  };
 
     const rippleRef = useRef();
     
@@ -90,13 +101,13 @@ export default function Home() {
                       key={index}
                       className={` ${isMiddleColumn ? 'lg:-mt-24' : ''}`}
                     >
-                      <Link to="/project">
-                        <div className="relative">
+                      <div>
+                        <div  onClick={() => handleProjectClick(item)} className="relative">
                           <h1 style={{ WebkitTextStroke: '1.22px white', textShadow: '1px 1px 2px rgba(0,0,0,0.25)' }} className="drop-shadow-md text-white text-5xl lg:text-7xl font-bold absolute -top-8 lg:-top-10 right-1 ">0{index + 1}</h1>
                           <img className="w-full h-full object-cover" src={item.coverImage} alt="" />
                           <h1 className="text-[#AAAAAA] tracking-[3px] mt-4 text-lg">{item.name}</h1>
                         </div>
-                      </Link>
+                      </div>
                         
                       
                     </div>
