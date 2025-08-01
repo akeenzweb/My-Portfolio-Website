@@ -10,7 +10,7 @@ import style from './Section2.module.css'
 
 import project1 from '../../../assets/projects/project1.png'
 import project2 from '../../../assets/projects/project2.png'
-import project3 from '../../../assets/projects/project3.png'
+import project3 from '../../../assets/projects/circlepot.svg'
 import project4 from '../../../assets/projects/project4.png'
 import project5 from '../../../assets/projects/project5.png'
 import project6 from '../../../assets/projects/project6.png'
@@ -23,10 +23,17 @@ export default function Home() {
   // const isProjectVisible = useProjectStore((state) => state.isProjectVisible);
   // const selectedProject = useProjectStore((state) => state.selectedProject);
 
-  const handleProjectClick = (project) => {
-    setSelectedProject(project);
-    setProjectVisible(true);
+  
+
+ const handleProjectClick = (project, index) => {
+  const updatedProject = {
+    ...project,
+    number: index, // or use `id` or `selectedIndex` — whatever fits your logic
   };
+
+  setSelectedProject(updatedProject);
+  setProjectVisible(true);
+};
 
     const rippleRef = useRef();
     
@@ -68,7 +75,7 @@ export default function Home() {
           coverImage: project2,
         },
         {
-          name: 'QA ALL IN ONE SOFTWARE',
+          name: 'CIRCLEPOT SAVINGS & INVESTMENT',
           coverImage: project3,
         },
         {
@@ -102,7 +109,7 @@ export default function Home() {
                       className={` ${isMiddleColumn ? 'lg:-mt-24' : ''}`}
                     >
                       <div>
-                        <div  onClick={() => handleProjectClick(item)} className="relative">
+                        <div  onClick={() => handleProjectClick(item, index)} className="relative">
                           <h1 style={{ WebkitTextStroke: '1.22px white', textShadow: '1px 1px 2px rgba(0,0,0,0.25)' }} className="drop-shadow-md text-white text-5xl lg:text-7xl font-bold absolute -top-8 lg:-top-10 right-1 ">0{index + 1}</h1>
                           <img className="w-full h-full object-cover" src={item.coverImage} alt="" />
                           <h1 className="text-[#AAAAAA] tracking-[3px] mt-4 text-lg">{item.name}</h1>

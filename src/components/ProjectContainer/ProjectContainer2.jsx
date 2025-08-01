@@ -24,7 +24,7 @@ import { scroller } from 'react-scroll';
 
 
 
-import Cover1 from '../../assets/images/cover1.svg'
+//import Cover1 from '../../assets/images/cover1.svg'
 import Bulb from '../../assets/images/bulb.svg'
 import Sketch1 from '../../assets/images/sketch1.png'
 import Wireframes1 from '../../assets/images/Wireframes1.svg'
@@ -107,7 +107,7 @@ useLayoutEffect(() => {
             {/* Fixed Background */}
             <div
                 className="fixed top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat z-[-1]"
-                style={{ backgroundImage: `url(${bgImage})` }}
+                style={{ backgroundImage: `url(${project.coverImage})` }}
             />
 
             {/* Foreground Scrollable Content */}
@@ -126,12 +126,12 @@ useLayoutEffect(() => {
                           </div>
                           <div className="order-1 sm:order-2 mt-0 lg:mt-0 text-[#AAAAAA] flex justify-end">
                               <div>
-                                  <img src={Cover1} alt="" />
+                                  <img src={project.coverImage} alt="" />
                                   <p className='uppercase tracking-[6px] mt-4'>{project.name}</p>
                               </div>
                           </div>
                       </div>
-                      <p className="fixed top-5 -left-24 -z-0 text-[270px] text-white opacity-10 font-bold pointer-events-none">01</p>
+                      <p className="fixed top-5 -left-24 -z-0 text-[270px] text-white opacity-10 font-bold pointer-events-none">0{project.number + 1}</p>
                   </div>
 
         <div className='bg-[#1C1C1C] min-h-[590px] mt-[550px] px-4 lg:px-20 py-12 lg:py-32 text-[#AAAAAA]'>
