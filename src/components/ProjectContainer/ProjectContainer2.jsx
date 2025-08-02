@@ -10,8 +10,8 @@ import React, { useEffect, useState, useLayoutEffect } from "react";
 
 //import ProjectView from '../ProjectView/ProjectView'
 
-import Banner1 from '../../assets/images/banner1.svg'
-import Banner1Mobile from '../../assets/images/banner1-mobileiv.svg'
+//import Banner1 from '../../assets/images/banner1.svg'
+//import Banner1Mobile from '../../assets/images/banner1-mobileiv.svg'
 
 
 // ____________________________________________________________________________________
@@ -56,13 +56,13 @@ export default function Project({project}) {
     };
   
 
-  const [bgImage, setBgImage] = useState(Banner1)
+  const [bgImage, setBgImage] = useState(project.coverImage)
 
   //const stableValue = JSON.stringify(project);
 
   useEffect(() => {
   const handleResize = () => {
-    setBgImage(window.innerWidth < 768 ? Banner1Mobile : Banner1);
+    setBgImage(window.innerWidth < 768 ? project.coverImageMobile : project.coverImage);
   };
 
   handleResize();
@@ -107,7 +107,7 @@ useLayoutEffect(() => {
             {/* Fixed Background */}
             <div
                 className="fixed top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat z-[-1]"
-                style={{ backgroundImage: `url(${project.coverImage})` }}
+                style={{ backgroundImage: `url(${bgImage})` }}
             />
 
             {/* Foreground Scrollable Content */}

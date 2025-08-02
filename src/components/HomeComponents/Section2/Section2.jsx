@@ -10,7 +10,9 @@ import style from './Section2.module.css'
 
 import project1 from '../../../assets/projects/project1.png'
 import project2 from '../../../assets/projects/project2.png'
-import project3 from '../../../assets/projects/circlepot.svg'
+import circlepotCover from '../../../assets/projects/circlepot/circlepot.webp'
+import circlepotCoverMobile from '../../../assets/projects/circlepot/circle-pot-mobile.webp'
+//import project3 from '../../../assets/projects/circlepot.svg'
 import project4 from '../../../assets/projects/project4.png'
 import project5 from '../../../assets/projects/project5.png'
 import project6 from '../../../assets/projects/project6.png'
@@ -76,7 +78,8 @@ export default function Home() {
         },
         {
           name: 'CIRCLEPOT SAVINGS & INVESTMENT',
-          coverImage: project3,
+          coverImage: circlepotCover,
+          coverImageMobile: circlepotCoverMobile
         },
         {
           name: 'LIVE MUSIC CONCERT',
