@@ -7,7 +7,7 @@ import Footer from '../../components/Footer/Footer'
 import style from "./Project.module.css";
 import lenis from "../../lenisInstance";
 
-import Bulb from "../../assets/images/bulb.svg";
+import Bulb from "../../assets/images/bulb2.svg";
 //import Sketch1 from "../../assets/images/buSketch1.jpg";
 // import Wireframes1 from "../../assets/images/Wireframes1.svg";
 // import Wireframesii from "../../assets/images/Wireframesii.svg";

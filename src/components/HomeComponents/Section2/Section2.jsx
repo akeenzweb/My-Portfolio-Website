@@ -19,7 +19,10 @@ import IBWireframeMobile from '../../../assets/projects/iambusayo/wireframeMobil
 
 
 
-import project2 from '../../../assets/projects/project2.png'
+import KuzaCover from '../../../assets/projects/kuza/kuzaCoverLarge.svg'
+import KuzaCoverMobile from '../../../assets/projects/kuza/kuzaCoverMobile.svg'
+
+
 import circlepotCover from '../../../assets/projects/circlepot/circlepot.webp'
 import circlepotCoverMobile from '../../../assets/projects/circlepot/circle-pot-mobile.webp'
 //import project3 from '../../../assets/projects/circlepot.svg'
@@ -98,11 +101,12 @@ const handleProjectClick2 = (project, index) => {
           mockupMobile: IBMockupMobile,
           wireframeLarge: IBWireframeLarge,
           wireframeMobile: IBWireframeMobile,
-          iframeVideo: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          iframeVideo: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1&loop=1&playlist=A95Zq_kvNl0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         },
         {
           name: 'SHOPKUZA FASHION WEBSITE',
-          coverImage: project2,
+          coverImage: KuzaCover,
+          coverImageMobile: KuzaCoverMobile,
         },
         {
           name: 'CIRCLEPOT SAVINGS & INVESTMENT',
