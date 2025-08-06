@@ -67,7 +67,7 @@ useEffect(() => {
 
   const handleScrollTo = (target) => {
     // setProjectVisible(false);
-    // setIsOpen(false)
+     setIsOpen(false)
 
     if (location.pathname !== '/') {
       if (target === 'contact') {
