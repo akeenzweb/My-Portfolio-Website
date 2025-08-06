@@ -29,8 +29,8 @@ import Bulb from '../../assets/images/bulb.svg'
 import Sketch1 from '../../assets/images/sketch1.png'
 import Wireframes1 from '../../assets/images/Wireframes1.svg'
 import Wireframesii from '../../assets/images/Wireframesii.svg'
-import Font1 from '../../assets/images/font1.png'
-import Color1 from '../../assets/images/color1.png'
+// import Font1 from '../../assets/images/font1.png'
+// import Color1 from '../../assets/images/color1.png'
 import Mockup1 from '../../assets/images/Mockups1.svg'
 import Mockup1ii from '../../assets/images/Mockups1ii.svg'
 
@@ -170,8 +170,8 @@ useLayoutEffect(() => {
             <div className=" mt-20 ">
                 <h1 className='text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4'>Font & Colors</h1>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
-                    <div className=''><img className='' src={Font1} alt="" /></div>
-                    <div className=''><img className='' src={Color1} alt="" /></div>
+                    {/* <div className=''><img className='' src={Font1} alt="" /></div>
+                    <div className=''><img className='' src={Color1} alt="" /></div> */}
                 </div>
             </div>
 

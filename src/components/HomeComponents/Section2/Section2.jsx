@@ -16,6 +16,8 @@ import IBMockupLarge from '../../../assets/projects/iambusayo/mockupLarge.webp'
 import IBMockupMobile from '../../../assets/projects/iambusayo/mockupMobile.webp'
 import IBWireframeLarge from '../../../assets/projects/iambusayo/wireframeLarge.svg'
 import IBWireframeMobile from '../../../assets/projects/iambusayo/wireframeMobile.svg'
+import IBFont from '../../../assets/projects/iambusayo/font1.png'
+import IBColor from '../../../assets/projects/iambusayo/color1.png'
 
 
 
@@ -90,7 +92,7 @@ const handleProjectClick2 = (project, index) => {
         };
       }, []);
       
-
+      const IamBusayoLink = 'https://www.iambusayosalako.com/'
       const items = [
         {
           name: 'IAMBUSAYO BRAND WEBSITE',
@@ -101,7 +103,10 @@ const handleProjectClick2 = (project, index) => {
           mockupMobile: IBMockupMobile,
           wireframeLarge: IBWireframeLarge,
           wireframeMobile: IBWireframeMobile,
-          iframeVideo: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1&loop=1&playlist=A95Zq_kvNl0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          iframeVideo: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1&loop=1&playlist=A95Zq_kvNl0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>,
+          font: IBFont,
+          color: IBColor,
+          liveUrl: IamBusayoLink
         },
         {
           name: 'SHOPKUZA FASHION WEBSITE',
@@ -168,7 +173,7 @@ const handleProjectClick2 = (project, index) => {
                       className={` ${isMiddleColumn ? 'lg:-mt-24' : ''}`}
                     >
                       <div>
-                        <div  onClick={() => handleProjectClick2(item, index)} className="relative">
+                        <div  onClick={() => handleProjectClick2(item, index)} className="relative cursor-pointer">
                           <h1 style={{ WebkitTextStroke: '1.22px white', textShadow: '1px 1px 2px rgba(0,0,0,0.25)' }} className="drop-shadow-md text-white text-5xl lg:text-7xl font-bold absolute -top-8 lg:-top-10 right-1 ">0{index + 1}</h1>
                           <img className="w-full h-full object-cover" src={item.coverImage} alt="" />
                           <h1 className="text-[#AAAAAA] tracking-[3px] mt-4 text-lg">{item.name}</h1>

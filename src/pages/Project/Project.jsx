@@ -11,8 +11,8 @@ import Bulb from "../../assets/images/bulb2.svg";
 //import Sketch1 from "../../assets/images/buSketch1.jpg";
 // import Wireframes1 from "../../assets/images/Wireframes1.svg";
 // import Wireframesii from "../../assets/images/Wireframesii.svg";
-import Font1 from "../../assets/images/font1.png";
-import Color1 from "../../assets/images/color1.png";
+// import Font1 from "../../assets/images/font1.png";
+// import Color1 from "../../assets/images/color1.png";
 // import Mockup1 from "../../assets/images/Mockups2i.svg";
 // import Mockup1ii from "../../assets/images/Mockups2ii.svg";
 import BackButton from "../../assets/images/back-button.svg";
@@ -167,8 +167,8 @@ export default function Project() {
               <div className="mt-20">
                 <h1 className="text-2xl md:text-3xl font-semibold mb-4">Font & Colors</h1>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  <img src={Font1} alt="Fonts" />
-                  <img src={Color1} alt="Colors" />
+                  <img src={selectedProject.font} alt="Fonts" />
+                  <img src={selectedProject.color} alt="Colors" />
                 </div>
               </div>
 
@@ -183,7 +183,9 @@ export default function Project() {
               <div className="iframe-wrapper w-full max-w-4xl mx-auto mt-10">
                 {selectedProject.iframeVideo}
               </div>
-              <a href="https://www.iambusayosalako.com/" target="_blank" rel="noopener noreferrer"><div className="underline mt-4 font-bold cursor-pointer">LIVE WEBSITE</div></a>
+              {selectedProject.liveUrl && 
+                <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer"><div className="underline mt-4 font-bold cursor-pointer">LIVE WEBSITE</div></a>
+              }
 
               {/* Summary */}
               <div className="relative border-b border-[#444343] pb-20 mt-20">
