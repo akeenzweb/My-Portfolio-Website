@@ -97,7 +97,8 @@ const handleProjectClick2 = (project, index) => {
           mockupLarge: IBMockupLarge,
           mockupMobile: IBMockupMobile,
           wireframeLarge: IBWireframeLarge,
-          wireframeMobile: IBWireframeMobile
+          wireframeMobile: IBWireframeMobile,
+          iframeVideo: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         },
         {
           name: 'SHOPKUZA FASHION WEBSITE',

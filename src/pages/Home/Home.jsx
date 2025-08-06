@@ -55,6 +55,7 @@ useEffect(() => {
   return (
     <div>
         <Header />
+        
         {isProjectVisible  && selectedProject &&  <ProjectContainer project={selectedProject} />}
 
         {/* {isProjectVisible   &&  <ProjectConTest  />} */}

@@ -180,6 +180,11 @@ export default function Project() {
                 </div>
               </div>
 
+              <div className="iframe-wrapper w-full max-w-4xl mx-auto mt-10">
+                {selectedProject.iframeVideo}
+
+              </div>
+
               {/* Summary */}
               <div className="relative border-b border-[#444343] pb-20 mt-20">
                 <h1 className="text-2xl md:text-3xl font-semibold mb-4">Project Summary</h1>
