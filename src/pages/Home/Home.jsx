@@ -23,7 +23,8 @@ import './Home.css'
 //import lenis from 'lenis';
 //import Lenis from '@studio-freight/lenis';
 
-import { Element } from 'react-scroll';
+import { Element, scroller } from 'react-scroll';
+import { useLocation } from 'react-router-dom';
 
 export default function Home() {
   
@@ -39,6 +40,17 @@ const selectedProject = useProjectStore((state) => state.selectedProject);
     });
     }
   }, [isProjectVisible]);
+
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.state?.scrollTo) {
+    scroller.scrollTo(location.state.scrollTo, {
+      duration: 1200,
+      smooth: true,
+    });
+  }
+}, [location]);
 
   return (
     <div>

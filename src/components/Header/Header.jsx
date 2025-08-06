@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import { useNavigate, useLocation } from 'react-router-dom';
+
 import { scroller } from 'react-scroll';
 
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,13 +14,26 @@ import Close from '../../assets/icons/close.svg'
 
 import DownloadDoc from '../../assets/icons/document-doc.svg'
 
-import { useProjectStore } from '../../store/projectStore';
+//import { useProjectStore } from '../../store/projectStore';
 
 
 
 export default function Header() {
 
   const [activeSection, setActiveSection] = useState('home');
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+useEffect(() => {
+  if (location.pathname !== '/') {
+    setTimeout(() => {
+      setActiveSection('project');
+    }, 100);
+  } else {
+    setActiveSection('home');
+  }
+}, [location.pathname])
 
 useEffect(() => {
   const handleScroll = () => {
@@ -44,21 +59,38 @@ useEffect(() => {
 }, []);
 
 
-  const setProjectVisible = useProjectStore((state) => state.setProjectVisible);
+  //const setProjectVisible = useProjectStore((state) => state.setProjectVisible);
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleScrollTo = (target) => {
-    setProjectVisible(false);
-    setIsOpen(false)
+  
 
-    setTimeout(() => {
-      scroller.scrollTo(target, {
-        duration: 1200,
-        smooth: true,
-        // offset: -80,
-      });
-    }, 50);
+  const handleScrollTo = (target) => {
+    // setProjectVisible(false);
+    // setIsOpen(false)
+
+    if (location.pathname !== '/') {
+      if (target === 'contact') {
+        setTimeout(() => {
+        scroller.scrollTo(target, {
+          duration: 1200,
+          smooth: true,
+        });
+      }, 50);
+      } else {
+        // Redirect to homepage and pass scroll target
+        navigate('/', { state: { scrollTo: target } });
+      }
+      
+    } else {
+      // Already on homepage, scroll directly
+      setTimeout(() => {
+        scroller.scrollTo(target, {
+          duration: 1200,
+          smooth: true,
+        });
+      }, 50);
+    }
   };
 
   
