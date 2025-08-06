@@ -152,23 +152,6 @@ export default function Project() {
                 </div>
               </div>
 
-              {/* The Build */}
-              <div className="relative border-b border-[#444343] pb-20 mt-20">
-                <h1 className="text-2xl md:text-3xl font-semibold mb-4">The Build</h1>
-                <p className="text-base tracking-[1px] leading-9">
-                  This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.
-                </p>
-              </div>
-
-              {/* Font & Colors */}
-              <div className="mt-20">
-                <h1 className="text-2xl md:text-3xl font-semibold mb-4">Font & Colors</h1>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  <img src={Font1} alt="Fonts" />
-                  <img src={Color1} alt="Colors" />
-                </div>
-              </div>
-
               {/* Mockups */}
               <div className="relative border-b border-[#444343] pb-20 mt-20">
                 <h1 className="text-2xl md:text-3xl font-semibold mb-4">The Mockup</h1>
@@ -180,10 +163,27 @@ export default function Project() {
                 </div>
               </div>
 
+              {/* Font & Colors */}
+              <div className="mt-20">
+                <h1 className="text-2xl md:text-3xl font-semibold mb-4">Font & Colors</h1>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  <img src={Font1} alt="Fonts" />
+                  <img src={Color1} alt="Colors" />
+                </div>
+              </div>
+
+              {/* The Build */}
+              <div className="relative border-b border-[#444343] pb-20 mt-20">
+                <h1 className="text-2xl md:text-3xl font-semibold mb-4">The Build</h1>
+                <p className="text-base tracking-[1px] leading-9">
+                  This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.
+                </p>
+              </div>
+
               <div className="iframe-wrapper w-full max-w-4xl mx-auto mt-10">
                 {selectedProject.iframeVideo}
-
               </div>
+              <a href="https://www.iambusayosalako.com/" target="_blank" rel="noopener noreferrer"><div className="underline mt-4 font-bold cursor-pointer">LIVE WEBSITE</div></a>
 
               {/* Summary */}
               <div className="relative border-b border-[#444343] pb-20 mt-20">
