@@ -95,10 +95,10 @@ export default function Project() {
               </div>
 
               {/* Intro Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:items-center">
                 <div className="order-2 sm:order-1 text-[#AAAAAA] mt-4 lg:mt-0">
                   <p className="text-base lg:text-3xl uppercase font-semibold lg:font-bold tracking-[2px] lg:tracking-[6px] leading-9 lg:leading-[60px]">
-                    A Sleek, personal brand website for Busayo Salako that feels both elegant and approachable.
+                    {selectedProject.paragraph}
                   </p>
                 </div>
                 <div className="order-1 sm:order-2 text-[#AAAAAA] flex justify-end">
@@ -120,7 +120,7 @@ export default function Project() {
               <div className="relative border-b border-[#444343] pb-20">
                 <h1 className="text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px] mb-4">The Ideas</h1>
                 <p className="text-base tracking-[1px] leading-9">
-                  At the heart of this project was the client’s vision: a brand website that embodies elegance while remaining approachable and relatable. Busayo wanted a digital home that reflected not only her refined taste but also her friendly, down-to-earth personality...
+                  {selectedProject.theIdea}
                 </p>
                 <img className="absolute -top-44 right-0" src={Bulb} alt="" />
               </div>
@@ -133,7 +133,7 @@ export default function Project() {
                     <img src={selectedProject.sketch} alt="" />
                   </div>
                   <p className="text-base tracking-[1px] leading-9">
-                    The project began with discovery sessions to understand the client’s tone, preferences, and goals. We started with quick sketches and wireframes before evolving into high-fidelity designs and polished front-end implementation.
+                    {selectedProject.theApproach}
                   </p>
                 </div>
                 <div className="col-span-2 hidden lg:block">
@@ -176,7 +176,7 @@ export default function Project() {
               <div className="relative border-b border-[#444343] pb-20 mt-20">
                 <h1 className="text-2xl md:text-3xl font-semibold mb-4">The Build</h1>
                 <p className="text-base tracking-[1px] leading-9">
-                  This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.
+                  {selectedProject.theBuild}
                 </p>
               </div>
 
@@ -191,7 +191,7 @@ export default function Project() {
               <div className="relative border-b border-[#444343] pb-20 mt-20">
                 <h1 className="text-2xl md:text-3xl font-semibold mb-4">Project Summary</h1>
                 <p className="text-base tracking-[1px] leading-9">
-                  From discovery to development, this was a complete design and build project for Busayo Salako’s brand website. I worked closely with the client to ensure the end product was polished, performant, and truly representative of her identity.
+                  {selectedProject.projectSummary}
                 </p>
               </div>
             </div>

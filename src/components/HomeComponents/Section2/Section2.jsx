@@ -9,29 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 import style from './Section2.module.css'
 
-import IBCover from '../../../assets/projects/iambusayo/iambusayoCover.svg'
-import IBCoverMobile from '../../../assets/projects/iambusayo/iambusayoCoverMobile.svg'
-import IBSketch from '../../../assets/projects/iambusayo/sketch.jpg'
-import IBMockupLarge from '../../../assets/projects/iambusayo/mockupLarge.webp'
-import IBMockupMobile from '../../../assets/projects/iambusayo/mockupMobile.webp'
-import IBWireframeLarge from '../../../assets/projects/iambusayo/wireframeLarge.svg'
-import IBWireframeMobile from '../../../assets/projects/iambusayo/wireframeMobile.svg'
-import IBFont from '../../../assets/projects/iambusayo/font1.png'
-import IBColor from '../../../assets/projects/iambusayo/color1.png'
-
-
-
-import KuzaCover from '../../../assets/projects/kuza/kuzaCoverLarge.svg'
-import KuzaCoverMobile from '../../../assets/projects/kuza/kuzaCoverMobile.svg'
-
-
-import circlepotCover from '../../../assets/projects/circlepot/circlepot.webp'
-import circlepotCoverMobile from '../../../assets/projects/circlepot/circle-pot-mobile.webp'
-//import project3 from '../../../assets/projects/circlepot.svg'
-import project4 from '../../../assets/projects/project4.png'
-import project5 from '../../../assets/projects/project5.png'
-import project6 from '../../../assets/projects/project6.png'
-
+import projects from '../../ProjectsData'
 //import bg from '../../../assets/images/Section2bg.png'
 
 export default function Home() {
@@ -92,46 +70,8 @@ const handleProjectClick2 = (project, index) => {
         };
       }, []);
       
-      const IamBusayoLink = 'https://www.iambusayosalako.com/'
-      const items = [
-        {
-          name: 'IAMBUSAYO BRAND WEBSITE',
-          coverImage: IBCover,
-          coverImageMobile: IBCoverMobile,
-          sketch: IBSketch,
-          mockupLarge: IBMockupLarge,
-          mockupMobile: IBMockupMobile,
-          wireframeLarge: IBWireframeLarge,
-          wireframeMobile: IBWireframeMobile,
-          iframeVideo: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1&loop=1&playlist=A95Zq_kvNl0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>,
-          font: IBFont,
-          color: IBColor,
-          liveUrl: IamBusayoLink
-        },
-        {
-          name: 'SHOPKUZA FASHION WEBSITE',
-          coverImage: KuzaCover,
-          coverImageMobile: KuzaCoverMobile,
-        },
-        {
-          name: 'CIRCLEPOT SAVINGS & INVESTMENT',
-          coverImage: circlepotCover,
-          coverImageMobile: circlepotCoverMobile
-        },
-        {
-          name: 'LIVE MUSIC CONCERT',
-          coverImage: project4,
-        },
-        {
-          name: 'ZENDEE DATING APP',
-          coverImage: project5,
-        },
-        {
-          name: 'CHURCH POCKET APP',
-          coverImage: project6,
-        },
-      ];
-
+      
+      
 
   return (
     // <div className="relative z-20 mt-[100vh]">
@@ -164,7 +104,7 @@ const handleProjectClick2 = (project, index) => {
 
          {/* Testing */}
           <div className={`${style.dmSans}w-full grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-24 lg:gap-x-16 lg:gap-y-60 `}>
-              {items.map((item, index) => {
+              {projects.map((project, index) => {
                   const isMiddleColumn = index % 3 === 1;
 
                   return (
@@ -173,10 +113,10 @@ const handleProjectClick2 = (project, index) => {
                       className={` ${isMiddleColumn ? 'lg:-mt-24' : ''}`}
                     >
                       <div>
-                        <div  onClick={() => handleProjectClick2(item, index)} className="relative cursor-pointer">
+                        <div  onClick={() => handleProjectClick2(project, index)} className="relative cursor-pointer">
                           <h1 style={{ WebkitTextStroke: '1.22px white', textShadow: '1px 1px 2px rgba(0,0,0,0.25)' }} className="drop-shadow-md text-white text-5xl lg:text-7xl font-bold absolute -top-8 lg:-top-10 right-1 ">0{index + 1}</h1>
-                          <img className="w-full h-full object-cover" src={item.coverImage} alt="" />
-                          <h1 className="text-[#AAAAAA] tracking-[3px] mt-4 text-lg">{item.name}</h1>
+                          <img className="w-full h-full object-cover" src={project.coverImage} alt="" />
+                          <h1 className="text-[#AAAAAA] tracking-[3px] mt-4 text-lg">{project.name}</h1>
                         </div>
                       </div>
                         

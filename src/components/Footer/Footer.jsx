@@ -48,7 +48,7 @@ export default function Footer() {
             <div className="pt-10 lg:pt-40  text-white block lg:flex justify-between  ">
                 <div>
                     <h1 className={`${style.sourceCode} text-lg lg:text-2xl text-[#AAAAAA]`}>Let’s work together</h1>
-                    <h1 className={`${style.dmSans} text-xl lg:text-5xl pt-4 font-bold text-[#FFFFFF]`}>akinboladesalak@gmail.com</h1>
+                    <h1 className={`${style.dmSans} text-xl lg:text-5xl pt-4 font-bold text-[#FFFFFF]`}>akinboladesalako@gmail.com</h1>
                     <img className="mt-10 lg:mt-20" src={WhatsppBtn} alt="" />
                 </div>
 
