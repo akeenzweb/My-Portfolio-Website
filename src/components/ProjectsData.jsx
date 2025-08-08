@@ -21,7 +21,10 @@ import circlepotCoverMobile from '../assets/projects/circlepot/circle-pot-mobile
 import circleWireLarge from '../assets/projects/circlepot/wireLarge.svg'
 import circleWireMobile from '../assets/projects/circlepot/wireMobile.svg'
 import circleSketch from '../assets/projects/circlepot/sketch.png'
-
+import circleMockLarge from '../assets/projects/circlepot/mockupLarge.webp'
+import circleMockMobile from '../assets/projects/circlepot/mockupMobile.webp'
+import circleFont from '../assets/projects/circlepot/font.jpg'
+import circleColor from '../assets/projects/circlepot/color.svg'
 
 //import project3 from '../../../assets/projects/circlepot.svg'
 import project4 from '../assets/projects/project4.png'
@@ -40,10 +43,11 @@ const projectsData = [
           mockupMobile: IBMockupMobile,
           wireframeLarge: IBWireframeLarge,
           wireframeMobile: IBWireframeMobile,
-          iframeVideo: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1&loop=1&playlist=A95Zq_kvNl0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>,
+          iframeVideo1: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1&loop=1&playlist=A95Zq_kvNl0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>,
           font: IBFont,
           color: IBColor,
           liveUrl: IamBusayoLink,
+          demoType: 'Website',
           paragraph: 'A Sleek, personal brand website for Busayo Salako that feels both elegant and approachable.',
           theIdea: 'At the heart of this project was the client’s vision: a brand website that embodies elegance while remaining approachable and relatable. Busayo wanted a digital home that reflected not only her refined taste but also her friendly, down-to-earth personality...',
           theApproach: 'The project began with discovery sessions to understand the client’s tone, preferences, and goals. We started with quick sketches and wireframes before evolving into high-fidelity designs and polished front-end implementation.',
@@ -61,19 +65,21 @@ const projectsData = [
           coverImage: circlepotCover,
           coverImageMobile: circlepotCoverMobile,
           sketch: circleSketch,
-        //   mockupLarge: IBMockupLarge,
-        //   mockupMobile: IBMockupMobile,
+          mockupLarge: circleMockLarge,
+          mockupMobile: circleMockMobile,
           wireframeLarge: circleWireLarge,
           wireframeMobile: circleWireMobile,
-        //   iframeVideo: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/A95Zq_kvNl0?autoplay=1&mute=1&loop=1&playlist=A95Zq_kvNl0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>,
-        //   font: IBFont,
-        //   color: IBColor,
-        //   liveUrl: IamBusayoLink,
-        paragraph: 'Circlepot lets people contribute, save, and manage shared goals together in trusted financial circles.',
-        theIdea: 'What if saving wasn’t solo? Circlepot empowers groups to contribute toward shared financial goals.',
-        theApproach: 'Sketched early ideas to visualize how groups can save together, simply and intuitively.',
-        //   theBuild: 'This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.',
-        projectSummary: 'Circlepot is a collaborative savings app where groups contribute, track, and grow shared funds with ease.',
+          iframeVideo1: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/ch0vRhSYUcY?autoplay=1&loop=1&playlist=ch0vRhSYUcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          iframeVideo2: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/EZY3AoQOGt4?autoplay=1&loop=1&playlist=EZY3AoQOGt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          font: circleFont,
+          color: circleColor,
+          //   liveUrl: IamBusayoLink,
+          demoType: 'Prototype',
+          paragraph: 'Circlepot lets people contribute, save, and manage shared goals together in trusted financial circles.',
+          theIdea: 'What if saving wasn’t solo? Circlepot empowers groups to contribute toward shared financial goals.',
+          theApproach: 'Sketched early ideas to visualize how groups can save together, simply and intuitively.',
+          //   theBuild: 'This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.',
+          projectSummary: 'Circlepot is a collaborative savings app where groups contribute, track, and grow shared funds with ease.',
         },
         {
           name: 'LIVE MUSIC CONCERT',

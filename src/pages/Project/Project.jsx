@@ -136,8 +136,8 @@ export default function Project() {
                     {selectedProject.theApproach}
                   </p>
                 </div>
-                <div className="col-span-2 hidden lg:block">
-                  <img src={selectedProject.sketch} alt="" />
+                <div className="col-span-2 hidden lg:flex justify-end">
+                  <img className="w-96" src={selectedProject.sketch} alt="" />
                 </div>
               </div>
 
@@ -173,16 +173,25 @@ export default function Project() {
               </div>
 
               {/* The Build */}
-              <div className="relative border-b border-[#444343] pb-20 mt-20">
-                <h1 className="text-2xl md:text-3xl font-semibold mb-4">The Build</h1>
-                <p className="text-base tracking-[1px] leading-9">
-                  {selectedProject.theBuild}
-                </p>
+              {selectedProject.theBuild && 
+                <div className="relative border-b border-[#444343] pb-20 mt-20">
+                  <h1 className="text-2xl md:text-3xl font-semibold mb-4">The Build</h1>
+                  <p className="text-base tracking-[1px] leading-9">
+                    {selectedProject.theBuild}
+                  </p>
+                </div>
+              }
+              
+              <div className="mt-20">
+                <h1 className="text-2xl md:text-3xl font-semibold mb-4">{selectedProject.demoType} Demo</h1>
+                <div className="iframe-wrapper w-full max-w-4xl mx-auto mt-10">
+                  {selectedProject.iframeVideo1}
+                </div>
+                <div className="iframe-wrapper w-full max-w-4xl mx-auto mt-10">
+                  {selectedProject.iframeVideo2}
+                </div>
               </div>
-
-              <div className="iframe-wrapper w-full max-w-4xl mx-auto mt-10">
-                {selectedProject.iframeVideo}
-              </div>
+              
               {selectedProject.liveUrl && 
                 <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer"><div className="underline mt-4 font-bold cursor-pointer">LIVE WEBSITE</div></a>
               }
