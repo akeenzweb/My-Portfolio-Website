@@ -36,7 +36,15 @@ import circleColor from '../assets/projects/circlepot/color.webp'
 //import project3 from '../../../assets/projects/circlepot.svg'
 import project4 from '../assets/projects/project4.png'
 import project5 from '../assets/projects/project5.png'
-import project6 from '../assets/projects/project6.png'
+
+import lcaCoverLarge from '../assets/projects/lca/lcaCoverLarge.webp'
+import lcaCoverMobile from '../assets/projects/lca/lcaCoverMobile.webp'
+import lcaWireLarge from '../assets/projects/lca/wireLarge.svg'
+import lcaMockupLarge from '../assets/projects/lca/mockupLarge.webp'
+import lcaSketch from '../assets/projects/lca/sketch.webp'
+import lcaFont from '../assets/projects/lca/font.jpg'
+import lcaColor from '../assets/projects/lca/color.jpg'
+//import project6 from '../assets/projects/project6.png'
 
 const IamBusayoLink = 'https://www.iambusayosalako.com/'
 
@@ -113,7 +121,24 @@ const projectsData = [
         },
         {
           name: 'CHURCH POCKET APP',
-          coverImage: project6,
+          coverImage: lcaCoverLarge,
+          coverImageMobile: lcaCoverMobile,
+          sketch: lcaSketch,
+          mockupLarge: lcaMockupLarge,
+          mockupMobile: lcaMockupLarge,
+          wireframeLarge: lcaWireLarge,
+          wireframeMobile: lcaWireLarge,
+          iframeVideo1: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/ch0vRhSYUcY?autoplay=1&loop=1&playlist=ch0vRhSYUcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          iframeVideo2: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/EZY3AoQOGt4?autoplay=1&loop=1&playlist=EZY3AoQOGt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          font: lcaFont,
+          color: lcaColor,
+          //   liveUrl: IamBusayoLink,
+          demoType: 'Prototype',
+          paragraph: 'A vibrant church app where members connect, share, and grow together in faith.',
+          theIdea: 'To create a digital space where church members can stay connected, share inspiration, and build relationships beyond Sunday services, making faith and fellowship part of daily life.',
+          theApproach: 'Designed an intuitive platform with message streaming, group chats, community feeds, and event updates—bringing the warmth of church fellowship into a modern, interactive space.',
+          //   theBuild: 'This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.',
+          projectSummary: 'This church community app is a hub for connection, learning, and encouragement. Members can watch sermons, engage in group or community chats, view admin posts, and socialize in a safe and uplifting environment, strengthening both faith and friendships..',
         },
       ];
 
