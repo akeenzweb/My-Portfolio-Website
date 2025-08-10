@@ -59,8 +59,10 @@ export default function Project() {
     });
   }, []);
 
-  const handleScrollTo = () => {
-    navigate("/");
+  const handleScrollTo = (target) => {
+    // navigate("/");
+    // Redirect to homepage and pass scroll target
+    navigate('/', { state: { scrollTo: target } });
   };
 
   // If still loading or redirecting
@@ -88,7 +90,7 @@ export default function Project() {
             >
               {/* Back Button */}
               <div
-                onClick={() => handleScrollTo()}
+                onClick={() => handleScrollTo('project')}
                 className="flex justify-start items-center mt-14 lg:mt-0 mb-4 lg:mb-5 cursor-pointer"
               >
                 <img className="h-10 lg:h-14" src={BackButton} alt="Back" />

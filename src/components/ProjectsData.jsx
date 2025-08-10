@@ -12,8 +12,15 @@ import IBColor from '../assets/projects/iambusayo/color1.png'
 
 
 
-import KuzaCover from '../assets/projects/kuza/kuzaCoverLarge.svg'
-import KuzaCoverMobile from '../assets/projects/kuza/kuzaCoverMobile.svg'
+import KuzaCover from '../assets/projects/kuza/kuzaCoverLarge.webp'
+import KuzaCoverMobile from '../assets/projects/kuza/kuzaCoverMobile.webp'
+import KuzaSketch from '../assets/projects/kuza/sketch.webp'
+import KuzaWireLarge from '../assets/projects/kuza/wireLarge.svg'
+import KuzaWireMobile from '../assets/projects/kuza/wireMobile.svg'
+import KuzaMockupLarge from '../assets/projects/kuza/mockupLarge.webp'
+import KuzaMockupMobile from '../assets/projects/kuza/mockupMobile.webp'
+import KuzaFont from '../assets/projects/kuza/font.jpg'
+import KuzaColor from '../assets/projects/kuza/color.jpg'
 
 
 import circlepotCover from '../assets/projects/circlepot/circlepot.webp'
@@ -59,6 +66,21 @@ const projectsData = [
           name: 'SHOPKUZA FASHION WEBSITE',
           coverImage: KuzaCover,
           coverImageMobile: KuzaCoverMobile,
+          sketch: KuzaSketch,
+          mockupLarge: KuzaMockupLarge,
+          mockupMobile: KuzaMockupMobile,
+          wireframeLarge: KuzaWireLarge,
+          wireframeMobile: KuzaWireMobile,
+          iframeVideo1: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/MUKx3ihQjss?autoplay=1&loop=1&playlist=MUKx3ihQjss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          font: KuzaFont,
+          color: KuzaColor,
+        //   liveUrl: IamBusayoLink,
+          demoType: 'Prototype',
+          paragraph: 'Kuza blends exotic elegance and modern sass for bold, unforgettable fashion statements.',
+          theIdea: 'Create a brand that fuses global exotic flair with confident, head-turning sophistication.',
+          theApproach: 'Explored vibrant palettes, sleek layouts, and bold imagery to reflect Kuza’s striking personality.',
+        //   theBuild: 'This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.',
+          projectSummary: 'Kuza is a distinctive fashion brand that celebrates individuality through designs that are exotic, refined, and unapologetically confident. Every collection is crafted to make wearers feel as bold and unforgettable as the pieces themselves.',
         },
         {
           name: 'CIRCLEPOT SAVINGS & INVESTMENT',
