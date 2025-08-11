@@ -1,7 +1,7 @@
 // src/data/projectsData.js
 
-import IBCover from '../assets/projects/iambusayo/iambusayoCover.svg'
-import IBCoverMobile from '../assets/projects/iambusayo/iambusayoCoverMobile.svg'
+import IBCover from '../assets/projects/iambusayo/iambusayoCover.webp'
+import IBCoverMobile from '../assets/projects/iambusayo/iambusayoCoverMobile.webp'
 import IBSketch from '../assets/projects/iambusayo/sketch.jpg'
 import IBMockupLarge from '../assets/projects/iambusayo/mockupLarge.webp'
 import IBMockupMobile from '../assets/projects/iambusayo/mockupMobile.webp'
@@ -128,8 +128,8 @@ const projectsData = [
           mockupMobile: lcaMockupLarge,
           wireframeLarge: lcaWireLarge,
           wireframeMobile: lcaWireLarge,
-          iframeVideo1: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/ch0vRhSYUcY?autoplay=1&loop=1&playlist=ch0vRhSYUcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
-          iframeVideo2: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/EZY3AoQOGt4?autoplay=1&loop=1&playlist=EZY3AoQOGt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          iframeVideo1: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/cNmU-509qrA?autoplay=1&loop=1&playlist=cNmU-509qrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          iframeVideo2: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/499q61APee0?autoplay=1&loop=1&playlist=499q61APee0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
           font: lcaFont,
           color: lcaColor,
           //   liveUrl: IamBusayoLink,

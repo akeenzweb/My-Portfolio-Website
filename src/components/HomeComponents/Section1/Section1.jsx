@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import ScrambleText from "../../ScrambleText";
 import style from './Section1.module.css'
 
-import Profile from '../../../assets/images/profile-orange-2.png'
+import Profile from '../../../assets/images/profile-orange-2.webp'
 import RightImg from '../../../assets/images/right-image.png'
 
 export default function Home() {
@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     // <div className="fixed top-0 left-0 w-full h-screen z-0">
-    <div className={`${style.rippleBackground} w-full bg-[url('/public/bggg-m3.png')] lg:bg-[url('/public/bggg.png')] min-h-screen px-4 lg:px-20 z-0 bg-[#1c1c1c]`} ref={rippleRef}>
+    <div className={`${style.rippleBackground} w-full bg-[url('/public/bggg-m3.webp')] lg:bg-[url('/public/bggg.webp')] min-h-screen px-4 lg:px-20 z-0 bg-[#1c1c1c]`} ref={rippleRef}>
         <div className={`${style.section}`}>
             <div  >
               <div className={` relative cursor-pointer flex items-center justify-center pt-36` } >
