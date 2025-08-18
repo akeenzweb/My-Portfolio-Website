@@ -35,7 +35,18 @@ import circleColor from '../assets/projects/circlepot/color.webp'
 
 //import project3 from '../../../assets/projects/circlepot.svg'
 import project4 from '../assets/projects/project4.png'
-import project5 from '../assets/projects/project5.png'
+
+
+import mrlCoverLarge from '../assets/projects/mrl/mrlCoverLarge.webp'
+import mrlCoverMobile from '../assets/projects/mrl/mrlCoverMobile.webp'
+import mrlSketch from '../assets/projects/mrl/sketch.webp'
+import mrlWireLarge from '../assets/projects/mrl/wireLarge.webp'
+import mrlWireMobile from '../assets/projects/mrl/wireMobile.webp'
+import mrlMockupLarge from '../assets/projects/mrl/mockupLarge.webp'
+import mrlMockupMobile from '../assets/projects/mrl/mockupMobile.webp'
+import mrlFont from '../assets/projects/mrl/font.webp'
+import mrlColor from '../assets/projects/mrl/color.svg'
+
 
 import lcaCoverLarge from '../assets/projects/lca/lcaCoverLarge.webp'
 import lcaCoverMobile from '../assets/projects/lca/lcaCoverMobile.webp'
@@ -116,8 +127,25 @@ const projectsData = [
           coverImage: project4,
         },
         {
-          name: 'ZENDEE DATING APP',
-          coverImage: project5,
+          name: 'MR. LOGISTIC DELIVERIES',
+          coverImage: mrlCoverLarge,
+          coverImageMobile: mrlCoverMobile,
+          sketch: mrlSketch,
+          mockupLarge: mrlMockupLarge,
+          mockupMobile: mrlMockupMobile,
+          wireframeLarge: mrlWireLarge,
+          wireframeMobile: mrlWireMobile,
+          iframeVideo1: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/ip_aG1A5RBI?si=nkg6lj_oAfjuKcTO&autoplay=1&loop=1&playlist=ip_aG1A5RBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          //iframeVideo2: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/EZY3AoQOGt4?autoplay=1&loop=1&playlist=EZY3AoQOGt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          font: mrlFont,
+          color: mrlColor,
+          //   liveUrl: IamBusayoLink,
+          demoType: 'Prototype',
+          paragraph: 'Mr. Logistics helps businesses move cargo seamlessly with smart transport options and transparent pricing.',
+          theIdea: 'Mr. Logistics was built to simplify how businesses—whether SMEs or large enterprises—move their goods. Instead of dealing with fragmented systems, companies can log in, request transfers, and instantly access multiple transport options tailored to cargo type, size, and destination.',
+          theApproach: 'We designed a platform that streamlines logistics decisions: from choosing between trucks, ships, or trains, to comparing dynamic pricing options. The interface reduces complexity, giving businesses clarity and control while ensuring their cargo gets where it needs to go, efficiently.',
+          //   theBuild: 'This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.',
+          projectSummary: 'Mr. Logistics is an end-to-end transport management solution for modern businesses. Clients can request deliveries, explore transport modes suited to their cargo, and compare prices instantly. By unifying logistics into one platform, it helps companies save time, cut costs, and scale their operations with confidence.',
         },
         {
           name: 'CHURCH POCKET APP',
