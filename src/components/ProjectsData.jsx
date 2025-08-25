@@ -34,7 +34,15 @@ import circleFont from '../assets/projects/circlepot/font.jpg'
 import circleColor from '../assets/projects/circlepot/color.webp'
 
 //import project3 from '../../../assets/projects/circlepot.svg'
-import project4 from '../assets/projects/project4.png'
+//import project4 from '../assets/projects/project4.png'
+
+import airSketch from '../assets/projects/air/sketch.png'
+import airWire from '../assets/projects/air/wire.svg'
+import airMockup from '../assets/projects/air/mockup.webp'
+import airCoverLarge from '../assets/projects/air/airCoverLarge.webp'
+import airCoverMobile from '../assets/projects/air/airCoverMobile.webp'
+import airFont from '../assets/projects/air/font.webp'
+import airColor from '../assets/projects/air/color.svg'
 
 
 import mrlCoverLarge from '../assets/projects/mrl/mrlCoverLarge.webp'
@@ -79,7 +87,6 @@ const projectsData = [
           theApproach: 'The project began with discovery sessions to understand the client’s tone, preferences, and goals. We started with quick sketches and wireframes before evolving into high-fidelity designs and polished front-end implementation.',
           theBuild: 'This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.',
           projectSummary: 'From discovery to development, this was a complete design and build project for Busayo Salako’s brand website. I worked closely with the client to ensure the end product was polished, performant, and truly representative of her identity.',
-          
         },
         {
           name: 'SHOPKUZA FASHION WEBSITE',
@@ -123,8 +130,25 @@ const projectsData = [
           projectSummary: 'Circlepot is a collaborative savings app where groups contribute, track, and grow shared funds with ease.',
         },
         {
-          name: 'LIVE MUSIC CONCERT',
-          coverImage: project4,
+          name: 'AIRVILLA ESTATE MANAGEMENT APP',
+          coverImage: airCoverLarge,
+          coverImageMobile: airCoverMobile,
+          sketch: airSketch,
+          mockupLarge: airMockup,
+          mockupMobile: airMockup,
+          wireframeLarge: airWire,
+          wireframeMobile: airWire,
+          iframeVideo1: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/8EYYRUZopzo?autoplay=1&loop=1&playlist=8EYYRUZopzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          //iframeVideo2: <iframe className="w-full aspect-video pointer-events-auto" src="https://www.youtube.com/embed/EZY3AoQOGt4?autoplay=1&loop=1&playlist=EZY3AoQOGt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+          font: airFont,
+          color: airColor,
+          //   liveUrl: IamBusayoLink,
+          demoType: 'Prototype',
+          paragraph: 'A modern, intuitive estate management app for Airvilla that feels both functional and community-driven.',
+          theIdea: 'At the heart of this project was the vision of creating a digital hub where residents could easily manage their estate life—paying bills, logging complaints, joining estate-wide chats, and exploring a vibrant community of homes, artisans, and nearby amenities. The goal was to build an experience that simplifies management while strengthening connections among residents.',
+          theApproach: 'The project began with mapping out resident journeys, identifying key needs like quick payments, transparent complaint tracking, and social engagement. We moved from initial sketches to detailed wireframes, ensuring usability and clarity, before shaping the final interface into a sleek, resident-first experience.',
+          //   theBuild: 'This project was designed and built from the ground up using React. Subtle animations, image collages, and mobile-first design choices make it responsive, fast, and full of personality.',
+          projectSummary: 'From ideation to implementation, this was a complete design and build project for Airvilla. Every feature from bills to community, was crafted to enhance estate living, streamline management, and empower residents to stay connected and informed within a single app.',
         },
         {
           name: 'MR. LOGISTIC DELIVERIES',
