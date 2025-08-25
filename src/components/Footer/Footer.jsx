@@ -11,7 +11,13 @@ import DownloadDoc from '../../assets/icons/document-doc.svg'
 
 export default function Footer() {
   const location = useLocation();
+
+   const cvUrl = '/CV/Akinbolade_Salako.docx'
   // const path = location.pathname;
+
+  const message = 'Hi, I came across your portfolio and wanted to reach out'
+  const whatsappLink = `https://wa.me/2349132690912?text=${message}`;
+  //const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     const rippleRef = useRef();
         
@@ -48,17 +54,17 @@ export default function Footer() {
             <div className="pt-10 lg:pt-40  text-white block lg:flex justify-between  ">
                 <div>
                     <h1 className={`${style.sourceCode} text-lg lg:text-2xl text-[#AAAAAA]`}>Let’s work together</h1>
-                    <h1 className={`${style.dmSans} text-xl lg:text-5xl pt-4 font-bold text-[#FFFFFF]`}>akinboladesalako@gmail.com</h1>
-                    <img className="mt-10 lg:mt-20" src={WhatsppBtn} alt="" />
+                    <a href="mailto:akinboladesalako.tech@gmail.com"><h1 className={`${style.dmSans} cursor-pointer text-xl lg:text-5xl pt-4 font-bold text-[#FFFFFF]`}>akinboladesalako.tech@gmail.com</h1></a>
+                    <img className={`${style.btnHover} mt-10 lg:mt-20` } onClick={() => window.open(whatsappLink, "_blank")} src={WhatsppBtn} alt="" />
                 </div>
 
                 <div className={`${style.dmSans} flex justify-between mt-40 lg:mt-0`}>
                     <ul className={location.pathname === "/" ? "block cursor-pointer" : "hidden cursor-pointer"}>
                         <li className="text-xl lg:text-2xl">EXPLORE</li>
-                        <ScrollLink to="home" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Home</li></ScrollLink>
-                        <ScrollLink to="project" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Projects</li></ScrollLink>
-                        <ScrollLink to="about" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">About Me</li></ScrollLink>
-                        <li className="text-base lg:text-xl text-[#FF9C12] font-semibold mt-5 tracking-[6px] flex">Get CV <img className="ml-2" src={DownloadDoc} alt="" /></li>
+                        <ScrollLink to="home" smooth={true} duration={1200}><li className={`${style.btnHover} text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]`}>Home</li></ScrollLink>
+                        <ScrollLink to="project" smooth={true} duration={1200}><li className={`${style.btnHover} text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]`}>Projects</li></ScrollLink>
+                        <ScrollLink to="about" smooth={true} duration={1200}><li className={`${style.btnHover} text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]`}>About Me</li></ScrollLink>
+                        <li onClick={() => window.open(cvUrl, "_blank")} className="text-base lg:text-xl text-[#FF9C12] font-semibold mt-5 tracking-[6px] flex">Get CV <img className="ml-2" src={DownloadDoc} alt="" /></li>
                     </ul>
 
                     <ul className={location.pathname !== "/" ? "block cursor-pointer" : "hidden cursor-pointer"}>
@@ -66,7 +72,7 @@ export default function Footer() {
                         <Link to="/"><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Home</li></Link>
                         {/* <Link to="project" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Projects</li></Link>
                         <Link to="about" smooth={true} duration={1200}><li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">About Me</li></Link> */}
-                        <li className="text-base lg:text-xl text-[#FF9C12] font-semibold mt-5 tracking-[6px] flex">Get CV <img className="ml-2" src={DownloadDoc} alt="" /></li>
+                        <li onClick={() => window.open(cvUrl, "_blank")} className="text-base lg:text-xl text-[#FF9C12] font-semibold mt-5 tracking-[6px] flex">Get CV <img className="ml-2" src={DownloadDoc} alt="" /></li>
                     </ul>
 
                     <ul className="ml-4 lg:ml-40 cursor-pointer">

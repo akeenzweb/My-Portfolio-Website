@@ -192,7 +192,7 @@ export default function Section3() {
 
         <div className="grid grid-cols-1 md:grid-cols-6 gap-4 lg:gap-16 items-start mb-20 text-white mt-20 md:mt-56">
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
-                <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>I work across various disciplines not limited to</p>
+                <p className={`${style.dmSans} text-2xl md:text-3xl font-semibold leading-10 md:leading-[52px]`}>I work across various disciplines such as</p>
             </div>
             <div className={` ${style.dmSans} md:col-span-4`}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

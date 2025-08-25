@@ -40,3 +40,13 @@
 .dmSans {
   font-family: "DM Sans", sans-serif;
 }
+
+
+.btnHover {
+  transition: all 0.5s ease;
+}
+
+.btnHover:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
