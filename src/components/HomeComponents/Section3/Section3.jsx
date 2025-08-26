@@ -284,7 +284,7 @@ export default function Section3() {
                     <Slider {...settings} nextArrow={<NextArrow />} prevArrow={<PrevArrow />}>
                         {referenceData.map((ref, index) => (
                             <div className="px-5 lg:px-20">
-                                <div key={index} className="bg-[#242424] min-w-[290px] lg:min-w-[410px] rounded-sm ">
+                                <div key={index} className="bg-[#242424] min-h-[340px] min-w-[290px] lg:min-w-[410px] rounded-sm ">
                                         {/* Image Section */}
                                         <div className="bg-[#1b1b1b] px-4 lg:px-5 py-2 flex items-center h-20">
                                             <img className="mr-4 h-14 w-14 rounded-full" src={ref.image} alt="" />

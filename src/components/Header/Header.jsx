@@ -149,7 +149,7 @@ useEffect(() => {
                         <span onClick={() => handleScrollTo('home')}><li className={`mb-5 ${activeSection === 'home' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}>Home</li></span>
                         <span onClick={() => handleScrollTo('project')}><li className={`mb-5 ${activeSection === 'project' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}>Projects</li></span>
                         <span onClick={() => handleScrollTo('about')}><li className={`mb-5 ${activeSection === 'about' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}>About Me</li></span>
-                        <li className='mb-5 flex items-center font-semibold'>Get CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>
+                        <li onClick={() => window.open(cvUrl, "_blank")}  className='mb-5 flex items-center font-semibold'>Get CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>
                         <span onClick={() => handleScrollTo('contact')}><li className='mb-5'><div className='bg-white uppercase text-[#222222] px-5 py-2 rounded-[4px]'>Contacts</div></li></span>
                       </ul>
                     </motion.div>

@@ -4,6 +4,10 @@ import SodeeqT from '../assets/images/refImg/sodeeq-t.svg'
 import OsiN from '../assets/images/refImg/osi-n.svg'
 import PraiseA from '../assets/images/refImg/praise-a.svg'
 import BusayoS from '../assets/images/refImg/busayo-s.svg'
+import PmT from '../assets/images/refImg/pm-t.png'
+import WaleA from '../assets/images/refImg/wale-a.png'
+import AdeB from '../assets/images/refImg/ade-b.png'
+import KK from '../assets/images/refImg/kennedy-k.png'
 
 
 const referenceData = [
@@ -36,11 +40,32 @@ const referenceData = [
     image: SodeeqT, // This could be a local or online path
   },
   {
-    name: "Osinakachi Nwakire",
-    title: "Data Analyst | AI and Automation Specialist",
+    name: "Kennedy Kanu",
+    title: "QA Engineer | SDET | Manual & API Testing ",
     message:
-      "Salako has consistently demonstrated himself to be an invaluable asset to the company, exhibiting remarkable growth and making a significant impact through his collaborative efforts with the team. His availability to address pressing issues, coupled with his dedication to conducting thorough research and refining his designs, showcases his mastery of his craft. I have had the privilege of witnessing his ascent to this distinguished position, which is a testament to his relentless hard work and unwavering commitment. It is clear that wherever his journey takes him, he will undoubtedly shine and continue to be an irreplaceable asset to any organization fortunate enough to have him.",
-    image: OsiN,
+      "I’ve had the pleasure of working with Akinbolade on several projects, and I can confidently say he is one of the most brilliant and creative UI/UX designers I’ve encountered. His ability to translate complex ideas into intuitive, user-centered designs is truly impressive. Whether it’s wire-framing, prototyping, or solving user pain points, Akin consistently delivers top-notch results with finesse and innovation. He has a great eye for aesthetics, a deep understanding of user behavior, and a collaborative spirit that makes working with him both productive and inspiring. Any team would be lucky to have him onboard. I wholeheartedly recommend him for any design opportunity",
+    image: KK,
+  },
+  {
+    name: "Adedamola Babatunde",
+    title: "Senior Backend Engineer | Java 🥇  ",
+    message:
+      "I've had the pleasure of working with Akinbolade, and I can confidently say he’s a highly talented product designer. His ability to translate complex ideas into clean, user-friendly designs is impressive. He brings creativity, attention to detail, and a strong sense of collaboration to every project. Any team would be lucky to have him!",
+    image: AdeB,
+  },
+  {
+    name: "Favour Adewale",
+    title: "Software Engineer | React | Next.js | React Native ",
+    message:
+      "Worked with Salako for over two years an I must say he’s a stellar designer, nothing short of genius 💯 ",
+    image: WaleA,
+  },
+  {
+    name: "Taiwo Lambo",
+    title: "Product Manager | Software Engineer ",
+    message:
+      "I recommend Akinbolade Salako because he is a dependable, creative and highly skilled professional. Working with him is always a delight. He brings such fresh perspective and insights always!",
+    image: PmT,
   },
   
 ];

@@ -19,6 +19,10 @@ export default function Footer() {
   const whatsappLink = `https://wa.me/2349132690912?text=${message}`;
   //const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+  const linkedinLink = 'https://www.linkedin.com/in/akinbolade-salako-835ba41b3/'
+  //const twitterLink = 'https://www.linkedin.com/in/akinbolade-salako-835ba41b3/'
+  const dribbbleLink = 'https://dribbble.com/Akinbolade_Salako'
+
     const rippleRef = useRef();
         
           useEffect(() => {
@@ -77,9 +81,9 @@ export default function Footer() {
 
                     <ul className="ml-4 lg:ml-40 cursor-pointer">
                         <li className="text-xl lg:text-2xl">SOCIALS</li>
-                        <li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">LinkedIn</li>
-                        <li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">X (Twitter)</li>
-                        <li className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Dribbble</li>
+                        <li onClick={() => window.open(linkedinLink, "_blank")} className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">LinkedIn</li>
+                        {/* <li onClick={() => window.open(twitterLink, "_blank")} className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">X (Twitter)</li> */}
+                        <li onClick={() => window.open(dribbbleLink, "_blank")} className="text-base lg:text-xl text-[#6E6E6E] font-semibold mt-5 tracking-[6px]">Dribbble</li>
                     </ul>
                 </div>
             </div>
