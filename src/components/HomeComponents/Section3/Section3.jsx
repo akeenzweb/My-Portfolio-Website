@@ -15,7 +15,7 @@ import Figma from '../../../assets/images/figma-interface.svg'
 import Industry1 from '../../../assets/images/industry1.svg'
 import Industry2 from '../../../assets/images/industry2.svg'
 import Industry3 from '../../../assets/images/industry3.svg'
-import Industry4 from '../../../assets/images/industry4.svg'
+import Industry4 from '../../../assets/images/industry4ii.svg'
 
 
 import FigLogo from '../../../assets/icons/fig-logo.svg'
