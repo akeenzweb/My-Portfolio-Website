@@ -139,6 +139,21 @@ export default function Section3() {
             </div>
         </div>
 
+        <div className="flex justify-center">
+            <iframe 
+                style={{ position: 'relative', zIndex: 10, pointerEvents: 'auto' }}
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/IWh-e61ODic?autoplay=1&mute=1&controls=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen>
+            </iframe>
+        </div>
+
+        
+
 
          <div className="grid grid-cols-1 md:grid-cols-6 gap-4 lg:gap-8 items-start mb-20 text-white mt-20 md:mt-56">
             <div className="md:col-span-2 text-[#AAAAAA] tracking-[3px] md:tracking-[6px]">
