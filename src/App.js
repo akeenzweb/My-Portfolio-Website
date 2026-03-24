@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //import $ from "jquery";
 import Home from "./pages/Home/Home";
 import Project from "./pages/Project/Project"
+import CaseStudy from "./pages/CaseStudy/CaseStudy";
 
 //import ScrollToTop from "./components/ScrollToTop";
 // import About from "./pages/About";
@@ -85,7 +86,7 @@ function App() {
       <div className="App">
         {/* <div className="ripple-background" ref={rippleRef}> */}
         <div>
-          <img src={Lines} alt="lines" className="fixed top-0 left-0 w-screen h-screen z-[9999] object-cover pointer-events-none" />
+          <img src={Lines} alt="lines" className="fixed opacity-[30%] top-0 left-0 w-screen h-screen z-[9999] object-cover pointer-events-none" />
           
           
           {/* Navigation Links */}
@@ -99,6 +100,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project" element={<Project />} />
+            <Route path="/case-study" element={<CaseStudy />} />
             {/* <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} /> */}
           </Routes>

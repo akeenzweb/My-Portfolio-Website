@@ -99,7 +99,7 @@ export default function Project() {
               {/* Intro Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:items-center">
                 <div className="order-2 sm:order-1 text-[#AAAAAA] mt-4 lg:mt-0">
-                  <p className="text-base lg:text-3xl uppercase font-semibold lg:font-bold tracking-[2px] lg:tracking-[6px] leading-9 lg:leading-[60px]">
+                  <p className="text-base lg:text-3xl font-semibold lg:font-bold tracking-[2px] lg:tracking-[3px] leading-9 lg:leading-[60px]">
                     {selectedProject.paragraph}
                   </p>
                 </div>

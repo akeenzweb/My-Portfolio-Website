@@ -11,6 +11,7 @@ import ProjectContainer from '../../components/ProjectContainer/ProjectContainer
 
 import Section1 from '../../components/HomeComponents/Section1/Section1'
 import Section2 from '../../components/HomeComponents/Section2/Section2'
+import CaseStudies from '../../components/HomeComponents/CaseStudies/CaseStudies'
 import Section3 from '../../components/HomeComponents/Section3/Section3'
 
 import Footer from '../../components/Footer/Footer'
@@ -68,6 +69,16 @@ useEffect(() => {
           </Element>
         }
 
+
+        {!isProjectVisible &&
+          <Element name="case-studies">
+            <div id="case-studies">
+              <CaseStudies />
+            </div>
+          </Element>
+        }
+
+
         {!isProjectVisible &&
           <Element name="project">
             <div id="project">
@@ -75,6 +86,7 @@ useEffect(() => {
             </div>
           </Element>
         }
+
 
         {!isProjectVisible &&
           <Element name="about">

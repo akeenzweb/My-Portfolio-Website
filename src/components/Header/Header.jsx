@@ -28,18 +28,28 @@ export default function Header() {
   const cvUrl = '/CV/Akinbolade_Salako.docx'
   
 useEffect(() => {
-  if (location.pathname !== '/') {
-    setTimeout(() => {
-      setActiveSection('project');
-    }, 100);
-  } else {
-    setActiveSection('home');
+  const pathMap = {
+    '/': 'home',
+    '/project': 'project',
+    '/case-study': 'case-studies',
+  };
+
+  const section = pathMap[location.pathname];
+
+  if (section) {
+    if (section === 'home') {
+      setActiveSection(section);
+    } else {
+      setTimeout(() => {
+        setActiveSection(section);
+      }, 100);
+    }
   }
-}, [location.pathname])
+}, [location.pathname]);
 
 useEffect(() => {
   const handleScroll = () => {
-    const sections = ['home', 'project', 'about', 'contact'];
+    const sections = ['home', 'case-studies', 'project', 'about', 'contact'];
     const scrollY = window.scrollY;
 
     for (let i = 0; i < sections.length; i++) {
@@ -109,6 +119,7 @@ useEffect(() => {
                 <span to="home" smooth={true} duration={1200}><img src={Logo} alt="" /></span>
                 <ul className={`${style.dmSans} flex text-[#787878] tracking-[6px] font-semibold items-center`}>
                     <li className=''><span onClick={() => handleScrollTo('home')}   className={`cursor-pointer ${activeSection === 'home' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}> Home </span></li>
+                    <li className=''><span onClick={() => handleScrollTo('case-studies')}   className={`ml-16 cursor-pointer ${activeSection === 'case-studies' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}> Case Studies </span></li>
                     <li className=''><span onClick={() => handleScrollTo('project')}   className={`ml-16 cursor-pointer ${activeSection === 'project' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}> Projects </span></li>
                     <li className=''><span onClick={() => handleScrollTo('about')}   className={`ml-16 cursor-pointer ${activeSection === 'about' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}> About Me </span></li>
                     {/* <Link to="project" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'>Projects</li></Link> */}
@@ -147,6 +158,7 @@ useEffect(() => {
                     >
                       <ul className={`${style.dmSans}  text-[#787878] tracking-[6px] font-semibold`}>
                         <span onClick={() => handleScrollTo('home')}><li className={`mb-5 ${activeSection === 'home' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}>Home</li></span>
+                        <span onClick={() => handleScrollTo('case-studies')}><li className={`mb-5 ${activeSection === 'case-studies' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}>Case Studies</li></span>
                         <span onClick={() => handleScrollTo('project')}><li className={`mb-5 ${activeSection === 'project' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}>Projects</li></span>
                         <span onClick={() => handleScrollTo('about')}><li className={`mb-5 ${activeSection === 'about' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}>About Me</li></span>
                         <li onClick={() => window.open(cvUrl, "_blank")}  className='mb-5 flex items-center font-semibold'>Get CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>

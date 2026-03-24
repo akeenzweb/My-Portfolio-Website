@@ -139,7 +139,7 @@ export default function Section3() {
             </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
             <iframe 
                 style={{ position: 'relative', zIndex: 10, pointerEvents: 'auto' }}
                 width="560" 
@@ -200,6 +200,8 @@ export default function Section3() {
             </div>
 
         </div>
+
+        <h3 className={`${style.dmSans}  lg:mt-8 text-[#AAAAAA] text-center font-semibold text-base lg:text-xl tracking-[6px]`}>and many more...</h3>
 
         <div className="mt-10 md:mt-56 flex justify-center">
             <img src={Figma} alt="" />
