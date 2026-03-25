@@ -102,7 +102,7 @@ const handleCaseStudyClick = (caseStudy, index) => {
                     </div>
 
                     <div className="bg-[#242424] w-full px-8 py-4 lg:px-16 lg:py-8">
-                      <h1 className="text-[#AAAAAA] tracking-[3px] mt-4 text-lg">{caseStudy.name}</h1>
+                      <h1 className="text-[#AAAAAA] tracking-[3px] mt-4 text-base md:text-lg">{caseStudy.name}</h1>
                     </div>
                   </div>
                 )

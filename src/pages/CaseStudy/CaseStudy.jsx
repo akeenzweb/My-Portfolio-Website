@@ -99,7 +99,7 @@ export default function Project() {
                 <div className="order-1 sm:order-2 text-[#AAAAAA] flex justify-end">
                   <div>
                     <img src={selectedCaseStudy.coverImage} alt={selectedCaseStudy.name} />
-                    <p className="uppercase tracking-[6px] mt-4">{selectedCaseStudy.name}</p>
+                    <p className="uppercase text-base tracking-[6px] mt-4">{selectedCaseStudy.name}</p>
                   </div>
                 </div>
               </div>
