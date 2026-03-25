@@ -133,11 +133,20 @@ export default function Project() {
                 <>
                   {/* Mobile */}
                   <div className="block md:hidden">
-                    <img
+                    {/* <img
                       src={selectedCaseStudy.contentMobile}
                       className="w-full h-auto"
                       alt="Mobile content"
-                    />
+                    /> */}
+                    {selectedCaseStudy.contentsMobile.map((content, index) => (
+                      <img
+                        key={index}
+                        src={content}
+                        className="w-full h-auto"
+                        alt={`Content ${index + 1}`}
+                      />
+                    ))}
+
                   </div>
 
                   {/* Desktop fallback (optional) */}

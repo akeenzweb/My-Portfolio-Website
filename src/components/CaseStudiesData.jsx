@@ -17,6 +17,23 @@ import Content14 from '../assets/case-studies/complyPass/contents/content14.svg'
 import ComplyContentMobile from '../assets/case-studies/complyPass/contents/content-mobile.jpg'   
 
 
+import ComplyMobile1 from '../assets/case-studies/complyPass/content-mobile/1.webp'
+import ComplyMobile2 from '../assets/case-studies/complyPass/content-mobile/2.webp'
+import ComplyMobile3 from '../assets/case-studies/complyPass/content-mobile/3.webp'
+import ComplyMobile4 from '../assets/case-studies/complyPass/content-mobile/4.webp'
+import ComplyMobile5 from '../assets/case-studies/complyPass/content-mobile/5.webp'
+import ComplyMobile6 from '../assets/case-studies/complyPass/content-mobile/6.webp'
+import ComplyMobile7 from '../assets/case-studies/complyPass/content-mobile/7.webp'
+import ComplyMobile8 from '../assets/case-studies/complyPass/content-mobile/8.webp'
+import ComplyMobile9 from '../assets/case-studies/complyPass/content-mobile/9.webp'
+import ComplyMobile10 from '../assets/case-studies/complyPass/content-mobile/10.webp'
+import ComplyMobile11 from '../assets/case-studies/complyPass/content-mobile/11.webp'
+import ComplyMobile12 from '../assets/case-studies/complyPass/content-mobile/12-s.svg'
+import ComplyMobile13 from '../assets/case-studies/complyPass/content-mobile/13.webp'
+import ComplyMobile14 from '../assets/case-studies/complyPass/content-mobile/14.webp'
+import ComplyMobile15 from '../assets/case-studies/complyPass/content-mobile/15.webp'
+
+
 import PlaceItContent1 from '../assets/case-studies/placeIt/contents/content1.jpg'
 import PlaceItContent2 from '../assets/case-studies/placeIt/contents/content2.webp'
 import PlaceItContent3 from '../assets/case-studies/placeIt/contents/content3.webp'
@@ -32,6 +49,7 @@ import PlaceItContent12 from '../assets/case-studies/placeIt/contents/content12.
 import PlaceItContent13 from '../assets/case-studies/placeIt/contents/content13.webp'
 import PlaceItContent14 from '../assets/case-studies/placeIt/contents/content14.webp'
 import PlaceItContent15 from '../assets/case-studies/placeIt/contents/content15.webp'
+//import { i } from 'framer-motion/client'
 
 
 const caseStudiesData = [
@@ -39,10 +57,13 @@ const caseStudiesData = [
           name: 'COMPLYPASS COMPLIANCE',
           coverImage: ComplyCover,
           isMobile: true,
-          contentMobile: ComplyContentMobile,
+          contentMobileOne: ComplyContentMobile,
           content: ComplyContent,
           contents: [
             Content1, Content2, Content3, Content4, Content5, Content6, Content7, Content8, Content9, Content10, Content11, Content12, Content13, Content14
+          ],
+          contentsMobile: [
+            ComplyMobile1, ComplyMobile2, ComplyMobile3, ComplyMobile4, ComplyMobile5, ComplyMobile6, ComplyMobile7, ComplyMobile8, ComplyMobile9, ComplyMobile10, ComplyMobile11, ComplyMobile12, ComplyMobile13, ComplyMobile14, ComplyMobile15
           ],
           //coverImageMobile: IBCoverMobile,
         //   sketch: IBSketch,
