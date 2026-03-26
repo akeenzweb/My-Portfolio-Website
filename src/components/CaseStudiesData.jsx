@@ -1,4 +1,4 @@
-import ComplyCover from '../assets/case-studies/complyPass/cover.png'
+import ComplyCover from '../assets/case-studies/complyPass/cover.webp'
 import ComplyContent from '../assets/case-studies/complyPass/content.svg'
 import Content1 from '../assets/case-studies/complyPass/contents/content1.svg'
 import Content2 from '../assets/case-studies/complyPass/contents/content2.svg'
