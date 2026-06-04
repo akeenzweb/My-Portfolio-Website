@@ -12,7 +12,7 @@ import Logo from '../../assets/images/logo-AS.svg'
 import Menu from '../../assets/icons/menu.svg'
 import Close from '../../assets/icons/close.svg'
 
-import DownloadDoc from '../../assets/icons/document-doc.svg'
+import DownloadDoc from '../../assets/icons/document-doc2.svg'
 
 //import { useProjectStore } from '../../store/projectStore';
 
@@ -25,7 +25,7 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const cvUrl = '/CV/Akinbolade_Salako.docx'
+  const cvUrl = '/CV/Akinbolade_Salako_CV.pdf'; // Update this path to your actual CV file location
   
 useEffect(() => {
   const pathMap = {
@@ -124,7 +124,7 @@ useEffect(() => {
                     <li className=''><span onClick={() => handleScrollTo('about')}   className={`ml-16 cursor-pointer ${activeSection === 'about' ? 'text-[#FF9C12] pb-2 font-bold border-b-2 border-[#FF9C12]' : ''}`}> About Me </span></li>
                     {/* <Link to="project" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'>Projects</li></Link> */}
                     {/* <Link to="about" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'>About Me</li></Link> */}
-                    <li onClick={() => window.open(cvUrl, "_blank")} className='ml-16 cursor-pointer flex items-center text-[#f3ece2] font-semibold'>Get CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>
+                    <li onClick={() => window.open(cvUrl, "_blank")} className='ml-16 cursor-pointer flex items-center text-[#f3ece2] font-semibold'>View CV <img className="ml-2 w-6" src={DownloadDoc} alt="" /></li>
                     <li onClick={() => handleScrollTo('contact')} className={`${style.btnHover} bg-white uppercase text-[#222222] px-5 py-2 rounded-[4px] ml-16 cursor-pointer`}><span to="contact" smooth={true} duration={1200} spy={true} offset={-80} activeClass="text-[#CF8113] " className=""> Contacts</span></li>
                     {/* <Link to="contact" smooth={true} duration={1200}><li className='ml-16 cursor-pointer'><div className='bg-white uppercase text-[#222222] px-5 py-2 rounded-[4px]'>Contacts</div></li></Link> */}
                 </ul>
